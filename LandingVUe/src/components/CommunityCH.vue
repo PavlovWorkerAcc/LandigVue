@@ -1,0 +1,142 @@
+<template>
+ <div class="container_community">
+   
+   <div class="content_community">
+     
+     <div class="description_community">
+
+       <div class="description_community_label">
+         <span>Netbook Community</span>
+       </div>
+
+       <div class="description_community_banner">
+         <span>Your Solution For Community!</span>
+       </div>
+
+       <div class="description_community_underBanText">
+         <span>More than 2 billion people in over countries use socibook to stay in touch with friends & family.</span>
+       </div>
+
+       <div class="description_community_btns">
+
+         <button class="description_community_btn">About More</button>
+
+         <button class="description_community_btn">Invite Friend</button>
+       </div>
+     </div>
+     
+     <div class="image_community">
+       <img src="src/img/Iamge.png">
+     </div>
+   </div>
+ </div>
+</template>
+
+<script>
+export default {
+  name: "CommunityCH"
+}
+</script>
+
+<style scoped lang="scss">
+.container_community{
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  background-color: rgba(33 , 123, 244 , 4%) ;
+  margin: 0 auto;
+  padding: 125px 0 165px 0 ;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25)); ;
+  .content_community{
+    display: flex;
+    align-items: center;
+  }
+  .description_community{
+
+    margin-right: 350px;
+    .description_community_label{
+      margin-left: 0;
+      width: 177px;
+      height: 36px;
+      color: red;
+      background-color: rgba(33 , 123, 244 , 20%) ;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span{
+        font-family: 'Inter' , sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 12px;
+        color: rgba(33, 123, 244, 1);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+    }
+    .description_community_banner{
+      width: 515px;
+      margin: 20px auto 20px 0;
+      span{
+        font-family: 'Inter' , sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 66px;
+
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        color: #0A093D;
+      }
+    }
+    .description_community_underBanText{
+      width: 491px;
+      margin: 0  auto 42px 0 ;
+      span{
+
+        font-family: 'Inter' , sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+
+
+        color: #656464;
+      }
+    }
+    .description_community_btns{
+
+      .description_community_btn{
+        width: 162px;
+        height: 62px;
+
+        background: #217BF4;
+        box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+        border-radius: 14px;
+        border: none;
+
+        font-family: 'Inter' , sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+
+
+        text-align: center;
+        transition: 0.6s;
+
+        color: #FFFFFF;
+        &:hover{
+          background-color: rgba(33 , 123, 244 , 0%);
+          color:rgba(33, 123, 244, 1);
+          transition: 0.6s;
+          border: 1px solid #217BF4;
+        }
+        &:not(:last-child){
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+</style>

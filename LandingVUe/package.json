@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
+    "video.js": "^7.21.1",
     "vite": "^4.0.0",
     "vite-plugin-sass-dts": "^1.2.13"
   }
