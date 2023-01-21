@@ -45,7 +45,7 @@ export default {
   align-items: center;
   background-color: rgba(33 , 123, 244 , 4%) ;
   margin: 0 auto;
-  padding: 125px 0 165px 0 ;
+  padding: 125px 0 200px 0 ;
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25)); ;
   .content_community{
     display: flex;

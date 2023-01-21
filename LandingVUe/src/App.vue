@@ -4,6 +4,8 @@ import CommunityCH from "./components/CommunityCH.vue";
 import AboutUs from "./components/AboutUs.vue";
 import Achivments from "./components/Achivments.vue";
 import MainFuture from "./components/MainFuture.vue";
+import Members from "./components/Members.vue";
+import Application from "./components/Application.vue";
 </script>
 
 <template>
@@ -12,6 +14,8 @@ import MainFuture from "./components/MainFuture.vue";
   <AboutUs/>
   <Achivments/>
   <MainFuture/>
+  <Members/>
+  <Application/>
 </template>
 
 
