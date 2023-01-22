@@ -6,6 +6,8 @@ import Achivments from "./components/Achivments.vue";
 import MainFuture from "./components/MainFuture.vue";
 import Members from "./components/Members.vue";
 import Application from "./components/Application.vue";
+import News from "./components/News.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
@@ -16,6 +18,8 @@ import Application from "./components/Application.vue";
   <MainFuture/>
   <Members/>
   <Application/>
+  <News/>
+  <Footer/>
 </template>
 
 

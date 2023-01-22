@@ -225,8 +225,14 @@ export default {
 
               /* identical to box height, or 100% */
 
-              color: #217BF4;
+              color: black;
               text-decoration: none;
+
+              transition: 0.5s;
+              &:hover {
+                transition: 0.5s;
+                color: #217BF4;
+              }
             }
           }
         }
@@ -333,7 +339,7 @@ export default {
           margin: 20px 0 0 0;
 
           span {
-            color: #4A4A56;
+
 
             a {
               font-family: 'Inter', sans-serif;
@@ -342,15 +348,19 @@ export default {
               font-size: 16px;
               line-height: 16px;
               /* identical to box height, or 100% */
-
               text-decoration: none;
+              color: black;
+              transition: 0.5s;
+              &:hover {
+                transition: 0.5s;
+                color: #217BF4;
+              }
             }
           }
         }
       }
     }
   }
-
       .ach_block_Description {
         height: 340px;
         margin-left: 250px;
