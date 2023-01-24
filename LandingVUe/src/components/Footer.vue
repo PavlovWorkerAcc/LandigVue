@@ -1,97 +1,80 @@
 <template>
   <footer>
     <div class="footer_content">
-        <div class="footer_navs_newsLetter">
+      <div class="footer_navs_newsLetter">
 
-          <div class="footer_nav_items">
+        <div class="footer_nav_items">
 
-            <div class="footer_nav_item_home item">
+          <div class="footer_nav_item_home item">
 
-              <span class="nav_item_label">Home</span>
+            <span class="nav_item_label">Home</span>
 
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-
-            </div>
-
-            <div class="footer_nav_item_Resource item">
-
-              <span class="nav_item_label">Resource</span>
-
-              <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Guides</a></li>
-                <li><a href="#">Help Center</a></li>
-              </ul>
-
-            </div>
-
-            <div class="footer_nav_item_Community item">
-
-              <span class="nav_item_label">Community</span>
-
-              <ul>
-                <li><a href="#">ANewsFeed</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Friends</a></li>
-                <li><a href="#">Forums</a></li>
-              </ul>
-
-            </div>
-
-            <div class="footer_nav_item_MainLinks item">
-
-              <span class="nav_item_label">Mail Links</span>
-
-              <ul>
-                <li><a href="#">Members</a></li>
-                <li><a href="#">Activity</a></li>
-                <li><a href="#">Groups</a></li>
-                <li><a href="#">Private Group</a></li>
-              </ul>
-
-            </div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
 
           </div>
 
-            <div class="footer_newsLetter">
+          <div class="footer_nav_item_Resource item">
 
-              <div class="footer_newsLetter_label">
-                <span>Subscribe Cirkle Newsletter</span>
-              </div>
+            <span class="nav_item_label">Resource</span>
 
-              <div class="footer_newsLetter_banner">
-                <span>Subscribe to be the first one to know about updates. Enter your email</span>
-              </div>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Help Center</a></li>
+            </ul>
 
-              <form action="" class="footer_newsLetter_form">
-                <input placeholder="Email Address">
-                <button>Subscribe</button>
-              </form>
-            </div>
-      </div>
-        <div class="footer_socials_logo">
-
-          <div class="footer_creater">
-            <span>Dimitriy Pavlov</span>
           </div>
 
-          <div class="footer_logo">
-            <img src="src/img/logo(1).png" alt="">
+          <div class="footer_nav_item_Community item">
+
+            <span class="nav_item_label">Community</span>
+
+            <ul>
+              <li><a href="#">ANewsFeed</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Friends</a></li>
+              <li><a href="#">Forums</a></li>
+            </ul>
+
           </div>
 
-          <div class="footer_socials">
-            <img src="src/img/socials/Twitter.png" alt="">
-            <img src="src/img/socials/instagram.png" alt="">
-            <img src="src/img/socials/facebook.png" alt="">
-            <img src="src/img/socials/Linkedin.png" alt="">
+          <div class="footer_nav_item_MainLinks item">
+
+            <span class="nav_item_label">Mail Links</span>
+
+            <ul>
+              <li><a href="#">Members</a></li>
+              <li><a href="#">Activity</a></li>
+              <li><a href="#">Groups</a></li>
+              <li><a href="#">Private Group</a></li>
+            </ul>
+
           </div>
+
         </div>
+
+        <div class="footer_newsLetter">
+
+          <div class="footer_newsLetter_label">
+            <span>Subscribe Cirkle Newsletter</span>
+          </div>
+
+          <div class="footer_newsLetter_banner">
+            <span>Subscribe to be the first one to know about updates. Enter your email</span>
+          </div>
+
+          <form action="" class="footer_newsLetter_form">
+            <input placeholder="Email Address">
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -103,7 +86,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  footer{
+  footer {
     line-height: 1.5;
     display: flex;
     flex-flow: column;
@@ -111,14 +94,17 @@ export default {
     margin: 0 auto;
     padding: 125px 0 0 0;
     background-color: #2B2B39;;
+
     .footer_content {
 
       .footer_navs_newsLetter {
         display: flex;
         align-items: center;
+        padding-bottom: 85px;
 
         .footer_nav_items {
           display: flex;
+          padding: 0 80px 0 110px;
 
           .item {
             margin-right: 100px;
@@ -164,13 +150,15 @@ export default {
             }
           }
         }
-        .footer_newsLetter{
-            margin-left: 163px;
-          .footer_newsLetter_label{
+
+        .footer_newsLetter {
+
+          .footer_newsLetter_label {
             width: 179px;
-            margin:0 auto 18px 0;
-            span{
-              font-family: 'Inter' ,sans-serif;
+            margin: 0 auto 18px 0;
+
+            span {
+              font-family: 'Inter', sans-serif;
               font-style: normal;
               font-weight: 500;
               font-size: 20px;
@@ -181,11 +169,13 @@ export default {
               color: #FFFFFF;
             }
           }
-          .footer_newsLetter_banner{
+
+          .footer_newsLetter_banner {
             width: 299px;
             margin: 0 auto 32px 0;
-            span{
-              font-family: 'Inter' , sans-serif;
+
+            span {
+              font-family: 'Inter', sans-serif;
               font-style: normal;
               font-weight: 400;
               font-size: 16px;
@@ -196,17 +186,19 @@ export default {
               color: #E7E7E7;
             }
           }
-          .footer_newsLetter_form{
-            display: flex;
-            input{
 
-              font-family: 'Inter' , sans-serif;
+          .footer_newsLetter_form {
+            display: flex;
+
+            input {
+
+              font-family: 'Inter', sans-serif;
               font-style: normal;
               font-weight: 400;
               font-size: 14px;
               line-height: 12px;
 
-              background:none;
+              background: none;
               /* identical to box height, or 86% */
               padding-left: 15px;
               letter-spacing: 0.0125em;
@@ -222,13 +214,14 @@ export default {
               border: 1px solid rgba(255, 255, 255, 0.85);
               border-radius: 12px;
             }
-            button{
+
+            button {
               position: relative;
               right: 125px;
               width: 126px;
               height: 48px;
 
-              font-family: 'Inter' ,sans-serif;
+              font-family: 'Inter', sans-serif;
               font-style: normal;
               font-weight: 500;
               font-size: 16px;
@@ -243,7 +236,8 @@ export default {
               background: #FFFFFF;
               border-radius: 12px;
               transition: 0.5s;
-              &:hover{
+
+              &:hover {
                 transition: 0.5s;
                 font-size: 20px;
                 color: white;
