@@ -2,22 +2,23 @@
   <div class="ach_container">
     <div class="ach_content">
 
+      <div class="ach_blocks">
         <div class="ach_block_Rating">
           <div class="ach_block_Rating_Label">
 
-              <div class="ach_block_Rating_Label_logo">
-                <img src="../img/Star.png" alt="">
-              </div>
+            <div class="ach_block_Rating_Label_logo">
+              <img src="../img/Star.png" alt="">
+            </div>
 
-              <div class="ach_block_Rating_Label_Text">
-                <span>4.8 Rating</span>
-              </div>
+            <div class="ach_block_Rating_Label_Text">
+              <span>4.8 Rating</span>
+            </div>
 
           </div>
 
           <div class="ach_block_Rating_Memembers">
 
-              <img src="../img/people.png" alt="">
+            <img src="../img/people.png" alt="">
 
 
             <div class="ach_block_Rating_Memembers_Text">
@@ -32,10 +33,10 @@
           </div>
 
           <div class="ach_block_Rating_Link">
-              <span><a href="#">Join Our Community ➜</a></span>
+            <span><a href="#">Join Our Community ➜</a></span>
           </div>
         </div>
-<!--        Awards-->
+        <!--        Awards-->
         <div class="ach_block_Awards">
           <div class="ach_block_Awards_Label">
 
@@ -69,6 +70,7 @@
             <span><a href="#">Go To Awards ➜</a></span>
           </div>
         </div>
+      </div>
 
         <div class="ach_block_Description">
 
@@ -116,244 +118,247 @@ export default {
       display: flex;
       align-items: center;
 
-      .ach_block_Rating {
+      .ach_blocks {
+        display: flex;
+        .ach_block_Rating {
 
-        width: 336px;
-        height: 340px;
-        background: #FFFFFF;
-        box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
-        border-radius: 14px;
-        margin-right: 25px;
-        padding: 46px 18px 40px 44px;
+          width: 336px;
+          height: 340px;
+          background: #FFFFFF;
+          box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
+          border-radius: 14px;
+          padding: 46px 18px 40px 44px;
 
-        .ach_block_Rating_Label {
-          display: flex;
-          align-items: center;
-          color: #0A093D;
+          .ach_block_Rating_Label {
+            display: flex;
+            align-items: center;
+            color: #0A093D;
 
-          .ach_block_Rating_Label_Text {
-            margin: 0 0 0 10px;
+            .ach_block_Rating_Label_Text {
+              margin: 0 0 0 10px;
 
-            span {
+              span {
 
-              font-family: 'Inter', sans-serif;
-              font-style: normal;
-              font-weight: 500;
-              font-size: 20px;
-              line-height: 20px;
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 20px;
 
 
-              color: #0A093D;
+                color: #0A093D;
+              }
+            }
+
+            .ach_block_Rating_Label_logo {
+              margin: 0;
             }
           }
 
-          .ach_block_Rating_Label_logo {
-            margin: 0;
-          }
-        }
-
-        .ach_block_Rating_Memembers {
-          display: flex;
-          align-items: center;
-          margin: 25px 0 30px 0;
-
-          img {
-            position: relative;
-            right: 19px;
-            margin: 0;
-
-          }
-
-          .ach_block_Rating_Memembers_Text {
-            margin: 0 0 0 0;
+          .ach_block_Rating_Memembers {
             display: flex;
-            position: relative;
-            top: -4px;
-            left: -12px;
+            align-items: center;
+            margin: 25px 0 30px 0;
+
+            img {
+              position: relative;
+              right: 19px;
+              margin: 0;
+
+            }
+
+            .ach_block_Rating_Memembers_Text {
+              margin: 0 0 0 0;
+              display: flex;
+              position: relative;
+              top: -4px;
+              left: -12px;
+
+              span {
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 18px;
+
+
+                letter-spacing: -0.02em;
+
+                color: #0A093D;
+
+                &:before {
+                  content: "+836k  ";
+                  color: #217BF4;;
+                  font-family: 'Inter', sans-serif;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 18px;
+                }
+              }
+            }
+          }
+
+          .ach_block_Rating_Text {
+            width: 274px;
 
             span {
               font-family: 'Inter', sans-serif;
               font-style: normal;
-              font-weight: 600;
+              font-weight: 400;
               font-size: 16px;
-              line-height: 18px;
+              line-height: 26px;
+
+              /* or 162% */
+
+              color: #8C8C8C;
+            }
+          }
+
+          .ach_block_Rating_Link {
+            margin: 20px 0 0 0;
+
+            span {
+              a {
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 550;
+                font-size: 16px;
+                line-height: 16px;
+
+                /* identical to box height, or 100% */
+
+                color: black;
+                text-decoration: none;
+
+                transition: 0.5s;
+
+                &:hover {
+                  transition: 0.5s;
+                  color: #217BF4;
+                }
+              }
+            }
+          }
+        }
+
+        .ach_block_Awards {
+
+          width: 336px;
+          height: 340px;
+          background: #FFFFFF;
+          box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
+          border-radius: 14px;
+          padding: 46px 18px 40px 44px;
+
+          .ach_block_Awards_Label {
+            display: flex;
+            align-items: center;
+            color: #0A093D;
+
+            .ach_block_AwardsLabel_Text {
+              margin: 0 0 0 10px;
+
+              span {
+
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 20px;
 
 
-              letter-spacing: -0.02em;
+                color: #0A093D;
+              }
+            }
 
-              color: #0A093D;
+            .ach_block_Awards_Label_logo {
+              margin: 0;
+            }
+          }
 
-              &:before {
-                content: "+836k  ";
+          .ach_block_Awards_Award {
+            display: flex;
+            align-items: center;
+            margin: 25px 0 30px 0;
+
+            .ach_block_Awards_Award_Logo {
+              position: relative;
+              right: 10px;
+              margin: 0;
+
+            }
+
+            .ach_block_Awards_Award_Text {
+              margin: 0 0 0 0;
+              display: flex;
+              position: relative;
+              top: -6px;
+              left: -12px;
+
+              span {
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 18px;
+
+
+                letter-spacing: -0.02em;
+
+                color: #0A093D;
+              }
+
+              .first_chp:after {
+                content: "  2021  ";
                 color: #217BF4;;
                 font-family: 'Inter', sans-serif;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 18px;
+                margin: 0 4px 0;
               }
             }
           }
-        }
 
-        .ach_block_Rating_Text {
-          width: 274px;
-
-          span {
-            font-family: 'Inter', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-
-            /* or 162% */
-
-            color: #8C8C8C;
-          }
-        }
-
-        .ach_block_Rating_Link {
-          margin: 20px 0 0 0;
-
-          span {
-            a {
-              font-family: 'Inter', sans-serif;
-              font-style: normal;
-              font-weight: 550;
-              font-size: 16px;
-              line-height: 16px;
-
-              /* identical to box height, or 100% */
-
-              color: black;
-              text-decoration: none;
-
-              transition: 0.5s;
-              &:hover {
-                transition: 0.5s;
-                color: #217BF4;
-              }
-            }
-          }
-        }
-      }
-
-      .ach_block_Awards {
-
-        width: 336px;
-        height: 340px;
-        background: #FFFFFF;
-        box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
-        border-radius: 14px;
-        margin-right: 25px;
-        padding: 46px 18px 40px 44px;
-
-        .ach_block_Awards_Label {
-          display: flex;
-          align-items: center;
-          color: #0A093D;
-
-          .ach_block_AwardsLabel_Text {
-            margin: 0 0 0 10px;
-
-            span {
-
-              font-family: 'Inter', sans-serif;
-              font-style: normal;
-              font-weight: 500;
-              font-size: 20px;
-              line-height: 20px;
-
-
-              color: #0A093D;
-            }
-          }
-
-          .ach_block_Awards_Label_logo {
-            margin: 0;
-          }
-        }
-
-        .ach_block_Awards_Award {
-          display: flex;
-          align-items: center;
-          margin: 25px 0 30px 0;
-
-          .ach_block_Awards_Award_Logo {
-            position: relative;
-            right: 10px;
-            margin: 0;
-
-          }
-
-          .ach_block_Awards_Award_Text {
-            margin: 0 0 0 0;
-            display: flex;
-            position: relative;
-            top: -6px;
-            left: -12px;
+          .ach_block_Awards_Text {
+            width: 274px;
 
             span {
               font-family: 'Inter', sans-serif;
               font-style: normal;
-              font-weight: 600;
+              font-weight: 400;
               font-size: 16px;
-              line-height: 18px;
+              line-height: 26px;
 
+              /* or 162% */
 
-              letter-spacing: -0.02em;
-
-              color: #0A093D;
-            }
-
-            .first_chp:after {
-              content: "  2021  ";
-              color: #217BF4;;
-              font-family: 'Inter', sans-serif;
-              font-style: normal;
-              font-weight: 600;
-              font-size: 16px;
-              line-height: 18px;
-              margin: 0 4px 0;
+              color: #8C8C8C;
             }
           }
-        }
 
-        .ach_block_Awards_Text {
-          width: 274px;
+          .ach_block_Awards_Link {
+            margin: 20px 0 0 0;
 
-          span {
-            font-family: 'Inter', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
-
-            /* or 162% */
-
-            color: #8C8C8C;
-          }
-        }
-
-        .ach_block_Awards_Link {
-          margin: 20px 0 0 0;
-
-          span {
+            span {
 
 
-            a {
-              font-family: 'Inter', sans-serif;
-              font-style: normal;
-              font-weight: 600;
-              font-size: 16px;
-              line-height: 16px;
-              /* identical to box height, or 100% */
-              text-decoration: none;
-              color: black;
-              transition: 0.5s;
-              &:hover {
+              a {
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 16px;
+                /* identical to box height, or 100% */
+                text-decoration: none;
+                color: black;
                 transition: 0.5s;
-                color: #217BF4;
+
+                &:hover {
+                  transition: 0.5s;
+                  color: #217BF4;
+                }
               }
             }
           }
@@ -363,7 +368,6 @@ export default {
   }
       .ach_block_Description {
         height: 340px;
-        margin-left: 250px;
 
         .ach_block_Description_label {
 
@@ -381,14 +385,13 @@ export default {
         }
 
         .ach_block_Description_banner {
-          width: 381px;
-          margin: 10px auto 18px 0;
+
 
           span {
             font-family: 'Inter' , sans-serif;
             font-style: normal;
             font-weight: 700;
-            font-size: 36px;
+
             line-height: 48px;
 
             /* or 133% */
@@ -398,15 +401,12 @@ export default {
         }
 
         .ach_block_Description_underBanText {
-          width: 365px;
-          margin: 0 auto 38px 0;
 
           span {
 
             font-family: 'Inter' , sans-serif;
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
             line-height: 175%;
 
             /* or 175% */
@@ -455,4 +455,71 @@ export default {
           }
         }
       }
+  @media screen and (min-width: 1575px){
+    .ach_block_Description{
+      margin-left: 250px;
+    }
+  }
+  @media screen and (min-width: 1245px){
+    .ach_block_Description{
+      margin-left: 50px;
+
+      .ach_block_Description_underBanText{
+        margin: 10px auto 18px 0;
+      }
+    }
+    .ach_block_Awards{
+      margin-right: 25px;
+    }
+  }
+  @media  screen and (max-width: 1245px) {
+    .ach_content {
+      flex-flow: column-reverse;
+    }
+    .ach_block_Description {
+      text-align: center;
+    }
+    .ach_block_Description_banner{
+      margin: 10px 0 18px 0;
+    }
+    .ach_block_Description_underBanText{
+      margin: 10px 0 18px 0;
+    }
+  }
+  @media screen and (min-width: 775px){
+    .ach_block_Rating{
+      margin-right: 25px;
+    }
+  }
+  @media screen and (max-width: 775px){
+    .ach_blocks{
+      flex-flow: column;
+      margin-top: 25px;
+      .ach_block_Awards{
+        margin-top: 50px;
+      }
+    }
+  }
+  @media screen and (min-width: 440px){
+    .ach_block_Description_banner{
+      width: 381px;
+      span{
+        font-size: 36px;
+      }
+    }
+    .ach_block_Description_underBanText{
+      width: 365px;
+      span{
+        font-size:16px;
+      }
+    }
+  }
+  @media screen and (max-width: 440px){
+    .ach_block_Description_banner{
+
+      span{
+        font-size: 34px;
+      }
+    }
+  }
 </style>

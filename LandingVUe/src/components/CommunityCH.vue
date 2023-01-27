@@ -53,9 +53,7 @@ export default {
   }
   .description_community{
 
-    margin-right: 350px;
     .description_community_label{
-      margin-left: 0;
       width: 177px;
       height: 36px;
       color: red;
@@ -76,21 +74,19 @@ export default {
       }
     }
     .description_community_banner{
-      width: 515px;
       margin: 20px auto 20px 0;
       span{
         font-family: 'Inter' , sans-serif;
         font-style: normal;
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 66px;
 
+        font-weight: 700;
+        line-height: 66px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         color: #0A093D;
       }
     }
     .description_community_underBanText{
-      width: 491px;
+
       margin: 0  auto 42px 0 ;
       span{
 
@@ -132,9 +128,76 @@ export default {
           transition: 0.6s;
           border: 1px solid #217BF4;
         }
-        &:not(:last-child){
-          margin-right: 20px;
-        }
+
+      }
+    }
+  }
+}
+@media screen and (min-width: 1700px) {
+  .description_community {
+    margin-right: 350px;
+  }
+}
+@media screen and (min-width: 1315px) {
+  .description_community_label {
+    margin-left: 0;
+  }
+}
+  @media screen and (max-width: 1315px) {
+    .description_community {
+      text-align: center;
+    }
+    .content_community {
+      display: flex;
+      flex-flow: column;
+    }
+  }
+@media screen and (max-width: 740px){
+  .image_community{
+    margin-top: 50px;
+    img{
+      width: 95%;
+    }
+  }
+}
+@media screen and (min-width: 575px) {
+  .description_community {
+
+    .description_community_banner {
+      width: 515px;
+
+      span {
+        font-size: 56px;
+      }
+    }
+
+    .description_community_underBanText {
+      width: 491px;
+    }
+  }
+}
+  @media screen and (max-width: 575px) {
+    .description_community_banner {
+      span {
+        font-size: 34px;
+      }
+    }
+  }
+@media screen and (min-width:344px ){
+  .description_community_btn{
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+}
+@media screen and (max-width: 344px){
+  .description_community_btns{
+    display: flex;
+    flex-flow: column;
+
+    .description_community_btn{
+      &:not(:last-child){
+        margin-bottom: 20px;
       }
     }
   }

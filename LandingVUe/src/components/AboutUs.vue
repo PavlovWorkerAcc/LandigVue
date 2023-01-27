@@ -66,7 +66,6 @@ export default {
       align-items: center;
       .about_description{
 
-        margin-right: 350px;
         .about_description_label{
 
           span{
@@ -79,26 +78,22 @@ export default {
           }
         }
         .about_description_banner{
-          width: 464px;
+
           margin: 10px auto 16px 0 ;
           span{
             font-family: "Inter", sans-serif;
             font-style: normal;
             font-weight: 700;
-            font-size: 46px;
             line-height: 66px;
             color: #0A093D;
           }
         }
         .about_description_underBantext{
-          margin: 0 auto 36px 0;
-          width: 380px;
           span{
 
             font-family: 'Inter' ,sans-serif;
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
             line-height: 28px;
 
             color: #656464;
@@ -110,9 +105,8 @@ export default {
             padding-left: 15px;
             li {
               list-style-position: outside;
-              list-style-image: url("src/components/icons/Group 1000001767.png");
               padding-left:10px;
-
+              list-style-image: url("src/components/icons/Group 1000001767.png");
 
               font-family: 'Inter' , sans-serif;
               font-style: normal;
@@ -136,19 +130,118 @@ export default {
 
         .about_photo{
           display: flex;
-          flex-flow: column;
 
           img:not(:last-child){
             margin-bottom: 32px ;
           }
         }
         .about_video{
-          margin-right: 26px;
           video{
-            height: 250px;
             border-radius: 15px;
           }
         }
+      }
+    }
+  }
+  @media screen and (min-width: 1575px){
+    .about_description{
+      margin-right: 360px;
+    }
+  }
+  @media screen and (max-width: 1575px){
+    .about_description{
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1265px){
+    .about_photo{
+      flex-flow: column;
+    }
+    .about_video{
+      margin-right: 26px;
+    }
+  }
+  @media screen and (max-width: 1265px){
+    .about_photo_video{
+      flex-flow: column;
+    }
+    .about_photo{
+      margin-top: 25px;
+      img:not(:last-child){
+        margin-right: 25px;
+      }
+    }
+  }
+  @media screen and (min-width: 1080px){
+    .about_description_underBantext{
+      margin: 0 auto 36px 0;
+    }
+  }
+  @media screen and (max-width: 1080px ){
+    .about_content{
+      flex-flow: column;
+    }
+    .about_description{
+      text-align: center;
+    }
+    .about_description_underBantext{
+      margin-bottom: 15px;
+    }
+    .about_description_list{
+      margin: 25px 0;
+      ul{
+        display: flex;
+      }
+    }
+    .about_description{
+      margin:0;
+    }
+  }
+  @media screen and (max-width: 600px){
+    .about_photo{
+      flex-flow: column;
+      img:not(:last-child){
+        margin-right: 0;
+      }
+    }
+  }
+  @media screen and (max-width: 475px){
+    .about_video{
+
+      video{
+        height: 175px;
+      }
+    }
+    .about_description_banner {
+      span {
+        font-size: 34px;
+      }
+    }
+    .about_description_underBantext{
+      span{
+        font-size: 16px;
+      }
+    }
+  }
+  @media screen and (min-width: 475px){
+    .about_video{
+
+      video{
+        height: 250px;
+      }
+    }
+    .about_description_banner {
+      width: 464px;
+
+      span{
+        font-size: 46px;
+      }
+    }
+    .about_description_underBantext{
+      width: 380px;
+
+      span{
+        font-size: 16px;
       }
     }
   }
