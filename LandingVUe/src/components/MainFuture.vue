@@ -118,6 +118,7 @@ export default {
         text-align: center;
         margin-bottom: 64px ;
         .Feature_heading_label{
+
           span{
             font-family: 'Inter' , sans-serif;
             font-style: normal;
@@ -137,7 +138,6 @@ export default {
             font-family: 'Inter' ,sans-serif;
             font-style: normal;
             font-weight: 700;
-            font-size: 36px;
             line-height: 36px;
 
             /* identical to box height, or 100% */
@@ -148,7 +148,7 @@ export default {
         }
         .Feature_heading_UnderBanText{
           margin-top: 19px;
-          width: 421px;
+
           span{
 
             font-family: 'Inter' , sans-serif;
@@ -171,8 +171,6 @@ export default {
 
           .Feature_cards_card{
             display: flex;
-            padding: 40px 46px 65px 44px ;
-            margin: 44px ;
             border-radius: 14px;
             background-color:white ;
             align-items: center;
@@ -180,9 +178,7 @@ export default {
               display: flex;
               flex-flow: column;
               width: 315px;
-              margin-left: 36px;
               .Feature_cards_card_info_label{
-                margin: 0 auto 0 0;
 
                 font-family: 'Inter' , sans-serif;
                 font-style: normal;
@@ -211,8 +207,6 @@ export default {
 
           .Feature_cards_card{
             display: flex;
-            padding: 40px 46px 65px 44px ;
-            margin: 44px ;
             border-radius: 20px;
             background-color:white ;
             align-items: center;
@@ -220,9 +214,7 @@ export default {
               display: flex;
               flex-flow: column;
               width: 315px;
-              margin-left: 36px;
               .Feature_cards_card_info_label{
-                margin: 0 auto 0 0;
 
                 font-family: 'Inter' , sans-serif;
                 font-style: normal;
@@ -248,6 +240,69 @@ export default {
           }
         }
       }
+    }
+  }
+  @media screen and (max-width: 1250px){
+    .Feature_cards{
+      flex-flow: column;
+    }
+  }
+  @media screen and (min-width: 630px) {
+    .Feature_cards_card{
+      margin: 44px;
+    }
+    .Feature_cards_card_info_label{
+      margin: 0 auto 0 0;
+    }
+    .Feature_cards_card_info{
+      margin-left: 36px;
+    }
+  }
+  @media screen and (max-width: 630px) {
+    .Feature_cards_card{
+      flex-flow: column;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  }
+  @media screen and (min-width: 495px) {
+    .Feature_cards_card{
+      padding: 40px 46px 65px 44px;
+    }
+    .Feature_heading_banner{
+      width: 430px;
+
+      span{
+        font-size:36px;
+      }
+    }
+    .Feature_heading_UnderBanText{
+      width: 421px;
+
+      span{
+        font-size: 16px;
+      }
+    }
+    .Feature_cards_card{
+      padding: 40px 20px 65px 20px;
+    }
+  }
+  @media screen and (max-width: 495px) {
+    .Feature_heading_banner{
+      width: 300px;
+      span{
+        font-size:28px;
+      }
+    }
+    .Feature_heading_UnderBanText{
+      width: 250px;
+
+      span{
+        font-size: 14px;
+      }
+    }
+    .Feature_cards_card {
+      padding: 40px 5px 65px 5px;
     }
   }
 </style>
