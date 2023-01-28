@@ -30,16 +30,16 @@
         <div class="about_video">
 
           <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
-            <source style="border-radius: 15px" src="src/assets/PromoVideo.mp4" type="video/mp4" />
-            <source style="border-radius: 15px" src="src/assets/PromoVideo.mp4" type="video/webm" />
+            <source style="border-radius: 15px" src="../assets/PromoVideo.mp4" type="video/mp4" />
+            <source style="border-radius: 15px" src="../assets/PromoVideo.mp4" type="video/webm" />
           </video>
 
         </div>
 
         <div class="about_photo">
-          <img src="src/img/AboutFirstImg.png" alt="">
+          <img src="../img/AboutFirstImg.png" alt="">
 
-          <img src="src/img/AboutSecondImg.png" alt="">
+          <img src="../img/AboutSecondImg.png" alt="">
         </div>
 
       </div>

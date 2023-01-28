@@ -21,7 +21,7 @@
           <div class="Feature_cards_card">
 
             <div class="Feature_cards_card_logo">
-              <img src="../img/feature%20icons/Icon.png" alt="">
+              <img src="../img/featureicons/Icon.png" alt="">
             </div>
 
             <div class="Feature_cards_card_info">
@@ -33,7 +33,7 @@
 
           <div class="Feature_cards_card">
             <div class="Feature_cards_card_logo">
-              <img src="../img/feature%20icons/Icon-1.png" alt="">
+              <img src="../img/featureicons/Icon-1.png" alt="">
             </div>
 
             <div class="Feature_cards_card_info">
@@ -44,7 +44,7 @@
 
           <div class="Feature_cards_card">
             <div class="Feature_cards_card_logo">
-              <img src="../img/feature%20icons/Icon-2.png" alt="">
+              <img src="../img/featureicons/Icon-2.png" alt="">
             </div>
 
             <div class="Feature_cards_card_info">
@@ -59,7 +59,7 @@
 
             <div class="Feature_cards_card">
               <div class="Feature_cards_card_logo">
-                <img src="../img/feature%20icons/Icon-3.png" alt="">
+                <img src="../img/featureicons/Icon-3.png" alt="">
               </div>
 
               <div class="Feature_cards_card_info">
@@ -70,7 +70,7 @@
 
             <div class="Feature_cards_card">
               <div class="Feature_cards_card_logo">
-                <img src="../img/feature%20icons/Icon-4.png" alt="">
+                <img src="../img/featureicons/Icon-4.png" alt="">
               </div>
 
               <div class="Feature_cards_card_info">
@@ -81,7 +81,7 @@
 
             <div class="Feature_cards_card">
               <div class="Feature_cards_card_logo">
-                <img src="../img/feature%20icons/Icon-5.png" alt="">
+                <img src="../img/featureicons/Icon-5.png" alt="">
               </div>
 
               <div class="Feature_cards_card_info">

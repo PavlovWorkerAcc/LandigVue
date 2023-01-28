@@ -24,63 +24,65 @@
       </div>
       
       <div class="members_cards">
+        <div class="members_cards_fANDs">
+          <div class="members_card">
 
-        <div class="members_card">
+            <div class="members_logo">
+              <img src="../img/members_img/Group1000001767.png" alt="">
+            </div>
 
-          <div class="members_logo">
-            <img src="../img/members_img/Group%201000001769.png" alt="">
-          </div>
-
-          <div class="members_label">
+            <div class="members_label">
               <span>Fahim Rahman</span>
-          </div>
+            </div>
 
-          <div class="members_social">
+            <div class="members_social">
               <span>@rahman</span>
-          </div>
-        </div>
-
-        <div class="members_card">
-
-          <div class="members_logo">
-            <img src="../img/members_img/Group%201000001770.png" alt="">
+            </div>
           </div>
 
-          <div class="members_label">
+          <div class="members_card">
+
+            <div class="members_logo">
+              <img src="../img/members_img/Group1000001769.png" alt="">
+            </div>
+
+            <div class="members_label">
               <span>Kazi Rahman</span>
-          </div>
+            </div>
 
-          <div class="members_social">
+            <div class="members_social">
               <span>@Rahman</span>
+            </div>
           </div>
         </div>
+        <div class="members_cards_tandf">
+          <div class="members_card">
 
-        <div class="members_card">
+            <div class="members_logo">
+              <img src="../img/members_img/Group1000001770.png" alt="">
+            </div>
 
-          <div class="members_logo">
-            <img src="../img/members_img/Group%201000001771.png" alt="">
-          </div>
-
-          <div class="members_label">
+            <div class="members_label">
               <span>Masterero Ali</span>
-          </div>
+            </div>
 
-          <div class="members_social">
+            <div class="members_social">
               <span>@Master</span>
-          </div>
-        </div>
-
-        <div class="members_card">
-          <div class="members_logo">
-            <img src="../img/members_img/Group%201000001767.png" alt="">
+            </div>
           </div>
 
-          <div class="members_label">
+          <div class="members_card">
+            <div class="members_logo">
+              <img src="../img/members_img/Group1000001771.png" alt="">
+            </div>
+
+            <div class="members_label">
               <span>Alia Karon</span>
-          </div>
+            </div>
 
-          <div class="members_social">
+            <div class="members_social">
               <span>@Alia</span>
+            </div>
           </div>
         </div>
 
@@ -147,7 +149,6 @@ export default {
 
       .members_heading_underBanText {
         margin-bottom: 38px;
-        width: 425px;
 
         span {
           font-family: 'Inter', sans-serif;
@@ -165,10 +166,6 @@ export default {
     }
 
     .members_btns {
-      background-color: rgba(33, 123, 244, 5%);
-      border-radius: 14px;
-      width: 474px;
-      height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -203,7 +200,9 @@ export default {
     .members_cards {
       display: flex;
       align-items: center;
-
+      .members_cards_fANDs , .members_cards_tandf{
+        display: flex;
+      }
       .members_card {
         padding: 30px 52px;
         background: #FFFFFF;
@@ -245,11 +244,6 @@ export default {
           }
         }
 
-        &:not(:first-child) {
-          margin-left: 30px;
-        }
-
-
         &:hover {
           text-align: center;
           transition: 1.25s;
@@ -266,4 +260,82 @@ export default {
     }
   }
 }
+@media screen and (min-width: 1260px){
+  .members_cards_fANDs{
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 1259px){
+  .members_cards{
+    flex-flow: column;
+  }
+  .members_cards_fANDs{
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 631px){
+  .members_card:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .members_cards_fANDs , .members_cards_tandf {
+    flex-flow: column;
+  }
+  .members_card{
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 521px){
+  .members_btns{
+    background-color: rgba(33, 123, 244, 5%);
+    border-radius: 14px;
+    width: 474px;
+    height: 72px;
+  }
+  .members_heading_underBanText{
+    width: 425px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .members_btns{
+    flex-flow: column;
+  }
+    .member_btn {
+      background: #217BF4;
+      box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+      border-radius: 14px;
+      border: none;
+
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+
+
+      text-align: center;
+      transition: 0.6s;
+
+
+      color: #FFFFFF;
+      vertical-align: center;
+
+      span:not(:first-child) {
+        position: relative;
+        top: 1px;
+        margin: 0 0 0 7px
+      }
+
+      &:hover {
+        background-color: rgba(33, 123, 244, 0%);
+        color: rgba(33, 123, 244, 1);
+        transition: 0.6s;
+        border: 1px solid #217BF4;
+      }
+      &:not(:last-child){
+        margin-bottom: 15px;
+      }
+    }
+  }
 </style>

@@ -16,15 +16,15 @@
 
         <div class="appl_description_btns">
 
-          <a href="https://www.apple.com/ua/app-store/"><img src="src/img/download_btn/image%20288.png" alt=""></a>
-          <a href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1"><img src="src/img/download_btn/image%20289.png" alt=""></a>
+          <a href="https://www.apple.com/ua/app-store/"><img src="../img/download_btn/image288.png" alt=""></a>
+          <a href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1"><img src="../img/download_btn/image289.png" alt=""></a>
 
         </div>
         
       </div>
       
       <div class="appl_photo">
-        <img src="src/img/Mask%20Group.png" alt="">
+        <img src="../img/MaskGroup.png" alt="">
       </div>
     </div>
   </div>
@@ -51,7 +51,6 @@ export default {
 
     .appl_description {
       height: 340px;
-      margin-left: 250px;
 
       .appl_description_label {
 
@@ -69,16 +68,14 @@ export default {
       }
 
       .appl_description_banner {
-        width: 351px;
-        margin: 10px auto 18px 0;
+
 
         span {
           font-family: 'Inter', sans-serif;
           font-style: normal;
           font-weight: 700;
-          font-size: 36px;
           line-height: 48px;
-
+          font-size: 36px;
           /* or 133% */
 
           color: #0A093D;
@@ -86,8 +83,7 @@ export default {
       }
 
       .appl_description_underBanText {
-        width: 340px;
-        margin: 0 auto 36px 0;
+
 
         span {
 
@@ -117,10 +113,64 @@ export default {
     }
 
     .appl_photo{
-      margin-left: 350px;
       position: relative;
       top: 5px;
     }
+  }
+}
+@media screen and (min-width: 1750px) {
+  .appl_photo {
+    margin-left: 350px
+  }
+}
+@media screen and (min-width: 1401px){
+  .appl_description{
+    margin-left: 250px;
+  }
+}
+@media screen and (max-width: 1400px){
+  .appl_content{
+    flex-flow: column;
+  }
+  .appl_description{
+    text-align: center;
+  }
+  .appl_description_btns{
+   margin-left: 25px;
+  }
+}
+@media screen and (max-width: 950px){
+  .appl_photo{
+    text-align: center;
+
+    img{
+      width: 95%;
+    }
+  }
+}
+@media screen and (min-width: 361px) {
+  .appl_description_banner{
+    width: 351px;
+    margin: 10px auto 18px 0;
+  }
+  .appl_description_underBanText{
+    width: 340px;
+    margin: 0 auto 36px 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .appl_description_banner{
+    width: 250px;
+  }
+  .appl_description_underBanText{
+    width: 240px;
+  }
+  .appl_description_btns{
+    flex-flow: column;
+    left: 35px;
+  }
+  .appl_photo{
+    margin-top: 90px;
   }
 }
 </style>

@@ -18,7 +18,7 @@
         <div class="news_item">
 
           <div class="news_item_photo">
-            <img src="src/img/news_photo/Image.png" alt="">
+            <img src="../img/news_photo/Image.png" alt="">
           </div>
 
           <div class="news_item_label">
@@ -38,7 +38,7 @@
         <div class="news_item">
 
           <div class="news_item_photo">
-            <img src="src/img/news_photo/Image-1.png" alt="">
+            <img src="../img/news_photo/Image-1.png" alt="">
           </div>
 
           <div class="news_item_label">
@@ -58,7 +58,7 @@
         <div class="news_item">
 
           <div class="news_item_photo">
-            <img src="src/img/news_photo/Image-2.png" alt="">
+            <img src="../img/news_photo/Image-2.png" alt="">
           </div>
 
           <div class="news_item_label">
@@ -138,12 +138,8 @@ export default {
        display: flex;
        align-items: center;
 
-       .news_item:not(:first-child) {
-         margin-left: 75px;
-       }
 
        .news_item_label {
-         margin: 25px 0;
          width: 273px;
          .news_item_label_container{
            display: flex;
@@ -172,8 +168,7 @@ export default {
        .news_item_link{
 
          span{
-            position: relative;
-            left: 30px ;
+            
            a{
              font-family: 'Inter' , sans-serif;
              font-style: normal;
@@ -196,6 +191,44 @@ export default {
            }
          }
        }
+     }
+   }
+ }
+ @media screen and (min-width: 1225px){
+   .news_item:not(:first-child){
+     margin-left: 75px;
+   }
+   .news_item_label{
+     margin:25px 0 ;
+   }
+   .news_item_link{
+
+     span{
+       position: relative;
+       left: 30px;
+     }
+   }
+ }
+ @media screen and (max-width: 1225px) {
+   .news_items{
+     flex-flow: column;
+     text-align: center;
+   }
+   .news_item:not(:last-child){
+     margin-bottom: 25px;
+   }
+   .line{
+     display: none;
+   }
+   .news_item_label{
+     margin: 15px auto;
+   }
+ }
+
+ @media screen and (max-width: 360px) {
+   .news_item_photo{
+     img{
+       width: 85%;
      }
    }
  }

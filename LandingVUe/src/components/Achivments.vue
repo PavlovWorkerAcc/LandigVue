@@ -52,7 +52,7 @@
 
           <div class="ach_block_Awards_Award">
             <div class="ach_block_Awards_Award_Logo">
-              <img src="../img/Ellipse%2014.png" alt="">
+              <img src="../img/Ellipse14.png" alt="">
             </div>
 
             <div class="ach_block_Awards_Award_Text">
@@ -89,7 +89,7 @@
           <div class="ach_block_Description_btns">
 
             <button class="ach_block_Description_btn"><span>Discover me</span><span>➜</span></button>
-            <img src="icons/ArrowRight.png" alt="">
+            <img src="../components/icons/ArrowRight.png" alt="">
 
           </div>
         </div>
@@ -460,15 +460,11 @@ export default {
       margin-left: 250px;
     }
   }
-  @media screen and (min-width: 1245px){
-    .ach_block_Description{
-      margin-left: 50px;
-
-      .ach_block_Description_underBanText{
-        margin: 10px auto 18px 0;
-      }
+  @media screen and (min-width: 1245px) {
+    .ach_block_Description_underBanText {
+      margin: 10px auto 18px 0;
     }
-    .ach_block_Awards{
+    .ach_block_Awards {
       margin-right: 25px;
     }
   }

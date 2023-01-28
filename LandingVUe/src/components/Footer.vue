@@ -5,56 +5,59 @@
 
         <div class="footer_nav_items">
 
-          <div class="footer_nav_item_home item">
+          <div class="footer_nav_item_fANDs">
+            <div class="footer_nav_item_home item">
 
-            <span class="nav_item_label">Home</span>
+              <span class="nav_item_label">Home</span>
 
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Community</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
 
+            </div>
+
+            <div class="footer_nav_item_Resource item">
+
+              <span class="nav_item_label">Resource</span>
+
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+
+            </div>
           </div>
+          <div class="footer_nav_item_tANDf">
+            <div class="footer_nav_item_Community item">
 
-          <div class="footer_nav_item_Resource item">
+              <span class="nav_item_label">Community</span>
 
-            <span class="nav_item_label">Resource</span>
+              <ul>
+                <li><a href="#">ANewsFeed</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Forums</a></li>
+              </ul>
 
-            <ul>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Guides</a></li>
-              <li><a href="#">Help Center</a></li>
-            </ul>
+            </div>
 
-          </div>
+            <div class="footer_nav_item_MainLinks item">
 
-          <div class="footer_nav_item_Community item">
+              <span class="nav_item_label">Mail Links</span>
 
-            <span class="nav_item_label">Community</span>
+              <ul>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Activity</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Private Group</a></li>
+              </ul>
 
-            <ul>
-              <li><a href="#">ANewsFeed</a></li>
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Friends</a></li>
-              <li><a href="#">Forums</a></li>
-            </ul>
-
-          </div>
-
-          <div class="footer_nav_item_MainLinks item">
-
-            <span class="nav_item_label">Mail Links</span>
-
-            <ul>
-              <li><a href="#">Members</a></li>
-              <li><a href="#">Activity</a></li>
-              <li><a href="#">Groups</a></li>
-              <li><a href="#">Private Group</a></li>
-            </ul>
-
+            </div>
           </div>
 
         </div>
@@ -96,7 +99,9 @@ export default {
     background-color: #2B2B39;;
 
     .footer_content {
-
+      .footer_nav_item_fANDs , .footer_nav_item_tANDf{
+        display: flex;
+      }
       .footer_navs_newsLetter {
         display: flex;
         align-items: center;
@@ -104,10 +109,8 @@ export default {
 
         .footer_nav_items {
           display: flex;
-          padding: 0 80px 0 110px;
 
           .item {
-            margin-right: 100px;
 
             .nav_item_label {
               font-family: 'Inter', sans-serif;
@@ -154,8 +157,8 @@ export default {
         .footer_newsLetter {
 
           .footer_newsLetter_label {
-            width: 179px;
-            margin: 0 auto 18px 0;
+
+            margin: 15px 0;
 
             span {
               font-family: 'Inter', sans-serif;
@@ -171,9 +174,7 @@ export default {
           }
 
           .footer_newsLetter_banner {
-            width: 299px;
-            margin: 0 auto 32px 0;
-
+            margin: 15px 0;
             span {
               font-family: 'Inter', sans-serif;
               font-style: normal;
@@ -217,7 +218,6 @@ export default {
 
             button {
               position: relative;
-              right: 125px;
               width: 126px;
               height: 48px;
 
@@ -249,4 +249,106 @@ export default {
       }
     }
   }
+  @media screen and (min-width: 1716px){
+    .footer_newsLetter_label{
+      margin:  0 auto 18px 0;
+      width: 179px;
+    }
+    .footer_newsLetter_banner{
+      margin: 0 auto 32px 0;
+      width: 299px;
+    }
+    .footer_nav_items{
+      padding: 0 80px 0 110px;
+    }
+  }
+  @media screen and (max-width: 1715px) {
+    .footer_navs_newsLetter {
+      flex-flow: column;
+    }
+    .footer_newsLetter_label{
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    .footer_newsLetter_banner{
+      margin-bottom: 25px;
+
+    }
+    .footer_newsLetter{
+      text-align: center;
+    }
+    .footer_newsLetter_form{
+      margin-left: 0;
+    }
+    .footer_newsLetter_form{
+      margin-left: 150px;
+    }
+    .footer_nav_items{
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 1110px) {
+    .footer_nav_items{
+      padding: 0 0 0 125px;
+    }
+    .item{
+      margin-right: 100px;
+    }
+  }
+  @media screen and (max-width: 1109px) {
+    .footer_nav_items {
+      flex-flow: column;
+      text-align: center;
+    }
+    .footer_nav_item_fANDs {
+      margin-bottom: 50px;
+    }
+    .footer_nav_item_Resource{
+      margin-left: 100px;
+    }
+    .footer_nav_item_MainLinks{
+      margin-left: 100px;
+    }
+  }
+    @media screen and (min-width: 606px) {
+      .footer_newsLetter_form {
+        button {
+          right: 125px;
+        }
+      }
+    }
+      @media screen and (max-width: 605px) {
+        .footer_nav_item_Resource{
+          margin-left: 0;
+        }
+        .footer_nav_item_MainLinks{
+          margin-left: 0;
+        }
+        .footer_newsLetter {
+          margin-top: 35px;
+        }
+        .footer_nav_item_fANDs {
+          flex-flow: column;
+
+          .item:not(:last-child) {
+            margin-bottom: 25px;
+          }
+        }
+        .footer_nav_item_tANDf {
+          flex-flow: column;
+
+          .item:not(:last-child) {
+            margin-bottom: 25px;
+          }
+        }
+
+        .footer_newsLetter_form {
+          margin-left: 0;
+          flex-flow: column;
+          button{
+            margin-top: 20px;
+          }
+        }
+      }
+
 </style>

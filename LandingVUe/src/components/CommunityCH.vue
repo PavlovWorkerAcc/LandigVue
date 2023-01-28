@@ -26,7 +26,7 @@
      </div>
      
      <div class="image_community">
-       <img src="src/img/Iamge.png">
+       <img src="../img/Iamge.png">
      </div>
    </div>
  </div>

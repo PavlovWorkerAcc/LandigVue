@@ -6,14 +6,14 @@
             </div>
 
             <div class="social_logo">
-              <img src="src/img/logo(1).png" alt="">
+              <img src="../img/logo(1).png" alt="">
             </div>
 
             <div class="social_socials">
-              <a href="https://twitter.com/home"><img src="src/img/socials/Twitter.png" alt=""></a>
-              <a href="https://www.instagram.com/"><img src="src/img/socials/instagram.png" alt=""></a>
-              <a href="https://www.facebook.com/"><img src="src/img/socials/facebook.png" alt=""></a>
-              <a href="https://ua.linkedin.com/"><img src="src/img/socials/Linkedin.png" alt=""></a>
+              <a href="https://twitter.com/home"><img src="../img/socials/Twitter.png" alt=""></a>
+              <a href="https://www.instagram.com/"><img src="../img/socials/instagram.png" alt=""></a>
+              <a href="https://www.facebook.com/"><img src="../img/socials/facebook.png" alt=""></a>
+              <a href="https://ua.linkedin.com/"><img src="../img/socials/Linkedin.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -30,7 +30,6 @@ export default {
     line-height: 1.5;
     display: flex;
     align-items: center;
-    padding: 31px 133px;
     background-color: #20202D;
     justify-content: space-between;
 
@@ -69,4 +68,14 @@ export default {
         }
       }
     }
+  @media screen and (max-width: 760px) {
+    .social_content{
+      flex-flow: column;
+    }
+  }
+  @media screen and (min-width: 470px) {
+      .socials_container{
+        padding: 31px 133px;
+      }
+  }
 </style>
