@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "aos": "^2.3.4",
     "hamburgers": "^1.2.1",
     "serve": "^14.2.0",
     "vue": "^3.2.45"

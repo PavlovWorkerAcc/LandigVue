@@ -2,14 +2,14 @@
   <div class="Feature_container">
     <div class="Feature_content">
       <div class="Feature_heading">
-        <div class="Feature_heading_label">
+        <div class="Feature_heading_label" data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="450" data-aos-once="true">
             <span>Our Community</span>
         </div>
-        <div class="Feature_heading_banner">
+        <div class="Feature_heading_banner" data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="500" data-aos-once="true">
           <span>Community Main Feature</span>
         </div>
 
-        <div class="Feature_heading_UnderBanText">
+        <div class="Feature_heading_UnderBanText" data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="520" data-aos-once="true">
           <span>The wise man therefore always holds in these matters to this principle of selection.</span>
         </div>
       </div>
@@ -18,7 +18,7 @@
 
         <div class="Feature_cards_left">
 
-          <div class="Feature_cards_card">
+          <div class="Feature_cards_card" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="450" data-aos-once="true">
 
             <div class="Feature_cards_card_logo">
               <img src="../img/featureicons/Icon.png" alt="">
@@ -31,7 +31,7 @@
 
           </div>
 
-          <div class="Feature_cards_card">
+          <div class="Feature_cards_card" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="470" data-aos-once="true">
             <div class="Feature_cards_card_logo">
               <img src="../img/featureicons/Icon-1.png" alt="">
             </div>
@@ -42,7 +42,7 @@
             </div>
           </div>
 
-          <div class="Feature_cards_card">
+          <div class="Feature_cards_card" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="500" data-aos-once="true">
             <div class="Feature_cards_card_logo">
               <img src="../img/featureicons/Icon-2.png" alt="">
             </div>
@@ -57,7 +57,7 @@
 
         <div class="Feature_cards_right">
 
-            <div class="Feature_cards_card">
+            <div class="Feature_cards_card" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="450" data-aos-once="true">
               <div class="Feature_cards_card_logo">
                 <img src="../img/featureicons/Icon-3.png" alt="">
               </div>
@@ -68,7 +68,7 @@
               </div>
             </div>
 
-            <div class="Feature_cards_card">
+            <div class="Feature_cards_card" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="470" data-aos-once="true">
               <div class="Feature_cards_card_logo">
                 <img src="../img/featureicons/Icon-4.png" alt="">
               </div>
@@ -79,7 +79,7 @@
               </div>
             </div>
 
-            <div class="Feature_cards_card">
+            <div class="Feature_cards_card" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="500" data-aos-once="true">
               <div class="Feature_cards_card_logo">
                 <img src="../img/featureicons/Icon-5.png" alt="">
               </div>

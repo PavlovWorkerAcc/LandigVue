@@ -4,10 +4,10 @@
 
       <div class="news_heading">
 
-        <div class="news_label">
+        <div class="news_label" data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="450" data-aos-once="true">
             <span>Always be aware of events</span>
         </div>
-        <div class="news_banner">
+        <div class="news_banner" data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="470" data-aos-once="true">
             <span>Latest News</span>
         </div>
 
@@ -15,7 +15,7 @@
 
       <div class="news_items">
 
-        <div class="news_item">
+        <div class="news_item" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="500" data-aos-once="true">
 
           <div class="news_item_photo">
             <img src="../img/news_photo/Image.png" alt="">
@@ -35,7 +35,7 @@
 
         </div>
 
-        <div class="news_item">
+        <div class="news_item" data-aos="flip-left" data-aos-duration="2000" data-aos-offset="510" data-aos-once="true">
 
           <div class="news_item_photo">
             <img src="../img/news_photo/Image-1.png" alt="">
@@ -55,7 +55,7 @@
 
         </div>
 
-        <div class="news_item">
+        <div class="news_item" data-aos="flip-left" data-aos-duration="3000" data-aos-offset="520" data-aos-once="true">
 
           <div class="news_item_photo">
             <img src="../img/news_photo/Image-2.png" alt="">

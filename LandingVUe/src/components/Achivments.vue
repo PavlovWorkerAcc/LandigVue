@@ -3,8 +3,8 @@
     <div class="ach_content">
 
       <div class="ach_blocks">
-        <div class="ach_block_Rating">
-          <div class="ach_block_Rating_Label">
+        <div class="ach_block_Rating" data-aos="fade-in" data-aos-duration="1400" data-aos-offset="400" data-aos-once="true">
+          <div class="ach_block_Rating_Label" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="450" data-aos-once="true">
 
             <div class="ach_block_Rating_Label_logo">
               <img src="../img/Star.png" alt="">
@@ -16,7 +16,7 @@
 
           </div>
 
-          <div class="ach_block_Rating_Memembers">
+          <div class="ach_block_Rating_Memembers" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="470" data-aos-once="true">
 
             <img src="../img/people.png" alt="">
 
@@ -26,19 +26,19 @@
             </div>
           </div>
 
-          <div class="ach_block_Rating_Text">
+          <div class="ach_block_Rating_Text" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="500" data-aos-once="true">
               <span>
                 More than 2 billion we people over countries use socibooks we to stay in touch with friends.
               </span>
           </div>
 
-          <div class="ach_block_Rating_Link">
+          <div class="ach_block_Rating_Link" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="530" data-aos-once="true">
             <span><a href="#">Join Our Community ➜</a></span>
           </div>
         </div>
         <!--        Awards-->
-        <div class="ach_block_Awards">
-          <div class="ach_block_Awards_Label">
+        <div class="ach_block_Awards" data-aos="fade-in" data-aos-duration="1400" data-aos-offset="400" data-aos-once="true">
+          <div class="ach_block_Awards_Label" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="450" data-aos-once="true">
 
             <div class="ach_block_Awards_Label_logo">
               <img src="../img/Trophy.png" alt="">
@@ -50,7 +50,7 @@
 
           </div>
 
-          <div class="ach_block_Awards_Award">
+          <div class="ach_block_Awards_Award" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="470" data-aos-once="true">
             <div class="ach_block_Awards_Award_Logo">
               <img src="../img/Ellipse14.png" alt="">
             </div>
@@ -60,13 +60,13 @@
             </div>
           </div>
 
-          <div class="ach_block_Awards_Text">
+          <div class="ach_block_Awards_Text" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="500" data-aos-once="true">
               <span>
                 More than 2 billion we people over countries use socibooks we to stay in touch with friends.
               </span>
           </div>
 
-          <div class="ach_block_Awards_Link">
+          <div class="ach_block_Awards_Link" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="530" data-aos-once="true">
             <span><a href="#">Go To Awards ➜</a></span>
           </div>
         </div>
@@ -74,19 +74,19 @@
 
         <div class="ach_block_Description">
 
-          <div class="ach_block_Description_label">
+          <div class="ach_block_Description_label" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="450" data-aos-once="true">
             <span>Our Achievement</span>
           </div>
 
-          <div class="ach_block_Description_banner">
+          <div class="ach_block_Description_banner" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="470" data-aos-once="true">
             <span>We are Connecting You The Digital Life.</span>
           </div>
 
-          <div class="ach_block_Description_underBanText">
+          <div class="ach_block_Description_underBanText" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="500" data-aos-once="true">
             <span>The scope the Social Media becomes crucial Is helps the business to directly engage with their needs and wants.</span>
           </div>
 
-          <div class="ach_block_Description_btns">
+          <div class="ach_block_Description_btns" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="530" data-aos-once="true">
 
             <button class="ach_block_Description_btn"><span>Discover me</span><span>➜</span></button>
             <img src="../components/icons/ArrowRight.png" alt="">

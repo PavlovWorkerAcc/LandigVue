@@ -2,28 +2,28 @@
   <div class="appl_container">
     <div class="appl_content">
       <div class="appl_description">
-        <div class="appl_description_label">
+        <div class="appl_description_label"  data-aos="fade-right" data-aos-duration="3000" data-aos-offset="450" data-aos-once="true">
           <span>Get Our Aplication</span>
         </div>
 
-        <div class="appl_description_banner">
+        <div class="appl_description_banner" data-aos="fade-right" data-aos-duration="3000" data-aos-offset="470" data-aos-once="true">
           <span>You Can Easily Find This App…!</span>
         </div>
 
-        <div class="appl_description_underBanText">
+        <div class="appl_description_underBanText" data-aos="fade-right" data-aos-duration="3000" data-aos-offset="500" data-aos-once="true" >
           <span>I say chap that’s suing lavatory chip shop gosh off his smashing boot are you taking the piss posh loo brilliant.</span>
         </div>
 
         <div class="appl_description_btns">
 
-          <a href="https://www.apple.com/ua/app-store/"><img src="../img/download_btn/image288.png" alt=""></a>
-          <a href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1"><img src="../img/download_btn/image289.png" alt=""></a>
+          <a href="https://www.apple.com/ua/app-store/"><img src="../img/download_btn/image288.png" alt="" data-aos="fade-right" data-aos-duration="3000" data-aos-offset="530" data-aos-once="true"></a>
+          <a href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1"><img src="../img/download_btn/image289.png" alt="" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="530" data-aos-once="true"></a>
 
         </div>
         
       </div>
       
-      <div class="appl_photo">
+      <div class="appl_photo" data-aos="fade-right" data-aos-duration="3000" data-aos-offset = '200' data-aos-once="true" data-aos-anchor-placement="top-center">
         <img src="../img/MaskGroup.png" alt="">
       </div>
     </div>

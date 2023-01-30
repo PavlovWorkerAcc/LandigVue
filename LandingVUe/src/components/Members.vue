@@ -3,28 +3,28 @@
     <div class="members_content">
       
       <div class="members_heading">
-        <div class="members_heading_label">
+        <div class="members_heading_label" data-aos="zoom-out" data-aos-duration="3000" data-aos-offset="450" data-aos-once="true">
             <span>Valuable Team</span>
         </div>
 
-        <div class="members_heading_banner">
+        <div class="members_heading_banner" data-aos="zoom-out" data-aos-duration="3000" data-aos-offset="470" data-aos-once="true">
             <span>Our Active Members</span>
         </div>
 
-        <div class="members_heading_underBanText">
+        <div class="members_heading_underBanText" data-aos="zoom-out" data-aos-duration="3000" data-aos-offset="500" data-aos-once="true">
             <span>when an unknown printer took a galley of type and meeting fari scrambled it.</span>
         </div>
 
       </div>
       
-      <div class="members_btns">
+      <div class="members_btns" data-aos="zoom-out" data-aos-duration="3000" data-aos-offset="530" data-aos-once="true">
         <button class="member_btn">Newst</button>
         <button class="member_btn">Popular</button>
         <button class="member_btn">Active</button>
       </div>
       
       <div class="members_cards">
-        <div class="members_cards_fANDs">
+        <div class="members_cards_fANDs" data-aos="fade-right" data-aos-duration="3000" data-aos-offset="570" data-aos-once="true">
           <div class="members_card">
 
             <div class="members_logo">
@@ -55,7 +55,7 @@
             </div>
           </div>
         </div>
-        <div class="members_cards_tandf">
+        <div class="members_cards_tandf"  data-aos="fade-left" data-aos-duration="3000" data-aos-offset="570" data-aos-once="true">
           <div class="members_card">
 
             <div class="members_logo">

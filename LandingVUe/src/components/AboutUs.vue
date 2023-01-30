@@ -2,32 +2,32 @@
   <div class="about_container">
     <div class="about_content">
 
-      <div class="about_description">
+      <div class="about_description" >
 
-        <div class="about_description_label">
+        <div class="about_description_label" data-aos="slide-right" data-aos-duration="1000" data-aos-offset="300" data-aos-once="true">
           <span>Whats Netbooks?</span>
         </div>
 
-        <div class="about_description_banner">
+        <div class="about_description_banner" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="300" data-aos-once="true">
           <span>Why Join to Netbook Social Netwokr?</span>
         </div>
 
-        <div class="about_description_underBantext">
+        <div class="about_description_underBantext" data-aos="flip-down" data-aos-duration="2000" data-aos-offset="300" data-aos-once="true">
           <span>Recent surveys have indicated that small businesses recognise the need they have to connect with consumer.</span>
         </div>
 
         <div class="about_description_list">
           <ul>
-            <li>Groups</li>
-            <li>Message</li>
-            <li>Share</li>
+            <li data-aos="fade-right" data-aos-duration="1600" data-aos-once="true">Groups</li>
+            <li data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Message</li>
+            <li data-aos="fade-right" data-aos-duration="2400" data-aos-once="true">Share</li>
           </ul>
         </div>
       </div>
 
       <div class="about_photo_video">
 
-        <div class="about_video">
+        <div class="about_video" data-aos="flip-left" data-aos-duration="800" data-aos-once="true">
 
           <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
             <source style="border-radius: 15px" src="../assets/PromoVideo.mp4" type="video/mp4" />
@@ -36,10 +36,10 @@
 
         </div>
 
-        <div class="about_photo">
-          <img src="../img/AboutFirstImg.png" alt="">
+        <div class="about_photo" >
+          <img src="../img/AboutFirstImg.png" alt="" data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">
 
-          <img src="../img/AboutSecondImg.png" alt="">
+          <img src="../img/AboutSecondImg.png" alt="" data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">
         </div>
 
       </div>
@@ -55,6 +55,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+$aos-distance: 500px; // It has to be above import
+@import 'node_modules/aos/src/sass/animations.scss';
+
+
   .about_container{
     line-height: 1.5;
     display: flex;

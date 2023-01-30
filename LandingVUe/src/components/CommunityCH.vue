@@ -3,7 +3,7 @@
    
    <div class="content_community">
      
-     <div class="description_community">
+     <div class="description_community" data-aos="slide-right" data-aos-duration="1500">
 
        <div class="description_community_label">
          <span>Netbook Community</span>
@@ -25,7 +25,7 @@
        </div>
      </div>
      
-     <div class="image_community">
+     <div class="image_community" data-aos="flip-left" data-aos-duration="1500">
        <img src="../img/Iamge.png">
      </div>
    </div>
@@ -39,6 +39,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .container_community{
   line-height: 1.5;
   display: flex;

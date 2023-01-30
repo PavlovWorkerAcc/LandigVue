@@ -3,7 +3,8 @@ import App from './App.vue'
 import './assets/main.scss'
 import './img/logo.png'
 import './components/Header.vue'
-createApp(App).mount('#app')
+createApp(App).mount('#app');
+AOS.init();
 
 window.onload = () => {
     function hamburger(){
@@ -25,4 +26,5 @@ window.onload = () => {
         }
     }
     checkWidth()
+
 }
