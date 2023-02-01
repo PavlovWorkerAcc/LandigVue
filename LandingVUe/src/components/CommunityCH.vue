@@ -3,7 +3,7 @@
    
    <div class="content_community">
      
-     <div class="description_community" data-aos="slide-right" data-aos-duration="1500">
+     <div class="description_community" data-aos="fade-right" data-aos-duration="1500">
 
        <div class="description_community_label">
          <span>Netbook Community</span>
@@ -33,6 +33,7 @@
 </template>
 
 <script>
+
 export default {
   name: "CommunityCH"
 }

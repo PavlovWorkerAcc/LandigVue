@@ -1,3 +1,6 @@
+<script setup>
+import {RouterLink , RouterView} from 'vue-router'
+</script>
 <template>
   <header>
     <div class="logo_header">
@@ -16,7 +19,7 @@
     <form class="form_header">
       <div class="glass_logo_form_header"><img src="/src/img/MagnifyingGlass.png" style="width: 15px"></div>
       <input class="form_header_input" type="search" placeholder="Search Here...">
-      <button class="btn_header">Log in</button>
+      <button class="btn_header" @click="$router.push('/Reg')" >Log in</button>
     </form>
 
     <div class="media_container">
@@ -32,7 +35,8 @@
 
         <form class="form_header_media">
           <input class="form_header_input_media" type="search" placeholder="Search Here...">
-          <button class="btn_header_media">Log in</button>
+          <RouterLink to="Reg"><button class="btn_header_media" @click="closeHomePage">Log in</button></RouterLink>
+          <RouterView/>
         </form>
       </div>
 
@@ -51,9 +55,9 @@
 </template>
 
 <script>
+import App from '../../src/App.vue'
 export default {
   name: "Header",
-
 
   methods: {
 
@@ -68,6 +72,10 @@ export default {
         div.style.display = 'none'
       }
     },
+    closeHomePage(){
+      let home = document.querySelector(App)
+      home.style.display = 'none'
+    }
   }
 }
 

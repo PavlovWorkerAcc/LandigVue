@@ -3,10 +3,16 @@ import App from './App.vue'
 import './assets/main.scss'
 import './img/logo.png'
 import './components/Header.vue'
-createApp(App).mount('#app');
-AOS.init();
+import router from "./router";
+const app = createApp(App)
+app.use(router)
+app.mount('#app');
 
+AOS.init()
 window.onload = () => {
+
+    window.scrollTo(0, 0);
+
     function hamburger(){
         let hamburger = document.querySelector(".hamburger");
 
