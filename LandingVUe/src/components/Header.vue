@@ -19,7 +19,7 @@ import {RouterLink , RouterView} from 'vue-router'
     <form class="form_header">
       <div class="glass_logo_form_header"><img src="/src/img/MagnifyingGlass.png" style="width: 15px"></div>
       <input class="form_header_input" type="search" placeholder="Search Here...">
-      <button class="btn_header" @click="$router.push('/Reg')" >Log in</button>
+      <button class="btn_header" @click="$router.push('/Login')" >Log in</button>
     </form>
 
     <div class="media_container">
@@ -35,7 +35,7 @@ import {RouterLink , RouterView} from 'vue-router'
 
         <form class="form_header_media">
           <input class="form_header_input_media" type="search" placeholder="Search Here...">
-          <RouterLink to="Reg"><button class="btn_header_media" @click="closeHomePage">Log in</button></RouterLink>
+          <button class="btn_header_media" @click="$router.push('/Login')">Log in</button>
           <RouterView/>
         </form>
       </div>

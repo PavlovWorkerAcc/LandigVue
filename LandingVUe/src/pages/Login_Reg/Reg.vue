@@ -15,27 +15,27 @@
         </div>
 
         <form class="reg_inputsANDbtns">
-          <div class="reg_input reg">
+          <div class="reg_input email">
             <span>Email</span>
             <input type="text" placeholder="Enter your email address">
             <hr>
           </div>
 
-          <div class="reg_input reg">
+          <div class="reg_input username">
             <span>Username</span>
             <input type="text" placeholder="Enter your User name">
             <hr>
           </div>
 
-          <div class="reg_input reg">
+          <div class="reg_input password">
             <span>Password</span>
-            <input type="text" placeholder="Enter your Password">
+            <input type="password" placeholder="Enter your Password">
             <hr>
           </div>
 
-          <div class="reg_input reg">
+          <div class="reg_input password">
             <span>Confirm Password</span>
-            <input type="text" placeholder="Confrim your Password">
+            <input type="password" placeholder="Confrim your Password">
             <hr>
           </div>
 
@@ -59,7 +59,7 @@
           <img src="src/img/Reg_Log_Photo.png" alt="">
 
           <div class="reg_photo_text">
-            <span class="reg_photo_text_heading">Sign Up to Noot</span>
+            <span class="reg_photo_text_heading">Sign Up to Netbook</span>
             <span class="reg_photo_text_label">Lorem Ipsum is simply</span>
           </div>
 
@@ -83,7 +83,7 @@ export default {
     display: flex;
     margin: 0 auto;
     .reg_content{
-      margin-top: 60px;
+      margin-top: 30px;
       display: flex;
       align-items: center;
 
@@ -111,6 +111,7 @@ export default {
               font-weight: 400;
               font-size: 16px;
               line-height: 24px;
+              color: #000842;
             }
           }
         }
@@ -142,6 +143,33 @@ export default {
 
               color: #000842;
               outline: none;
+            }
+          }
+          .email{
+            span{
+              display: flex;
+              &:before{
+                content: url("src/components/icons/Log_Reg_Icons/messageIcon.png");
+                margin: 0 5px 0 0;
+              }
+            }
+          }
+          .username{
+            span{
+              display: flex;
+              &:before{
+                content: url("src/components/icons/Log_Reg_Icons/userIcon.png");
+                margin: 0 5px 0 0;
+              }
+            }
+          }
+          .password{
+            span{
+              display: flex;
+              &:before{
+                content: url("src/components/icons/Log_Reg_Icons/padlockIcon.png");
+                margin: 0 5px 0 0;
+              }
             }
           }
           .Reg_btn{

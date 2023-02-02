@@ -5,13 +5,13 @@ import './img/logo.png'
 import './components/Header.vue'
 import router from "./router";
 const app = createApp(App)
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 app.use(router)
 app.mount('#app');
-
 AOS.init()
 window.onload = () => {
 
-    window.scrollTo(0, 0);
 
     function hamburger(){
         let hamburger = document.querySelector(".hamburger");
