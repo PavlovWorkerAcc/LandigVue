@@ -1,8 +1,11 @@
+<script setup>
+
+</script>
 <template>
   <div class="log_container">
     <div class="log_content">
 
-      <div class="log_form">
+      <div class="log_form" data-aos="fade-right" data-aos-duration="2500">
         <div class="log_form_header">
           <div class="log_form_header_label">
             <span>Sign In</span>
@@ -41,11 +44,11 @@
         </form>
       </div>
 
-      <div class="log_photo">
+      <div class="log_photo" data-aos="fade-down" data-aos-duration="2500">
 
         <div class="log_photo_container">
 
-          <img src="src/img/Reg_Log_Photo.png" alt="">
+          <img src="../../img/Reg_Log_Photo.png" alt="">
 
           <div class="log_photo_text">
             <span class="log_photo_text_heading">Sign Up to Netbook</span>
@@ -60,8 +63,11 @@
 </template>
 
 <script>
+
+
 export default {
-  name: "Reg"
+  name: "Login",
+
 }
 </script>
 

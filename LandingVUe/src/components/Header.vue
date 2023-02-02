@@ -36,7 +36,6 @@ import {RouterLink , RouterView} from 'vue-router'
         <form class="form_header_media">
           <input class="form_header_input_media" type="search" placeholder="Search Here...">
           <button class="btn_header_media" @click="$router.push('/Login')">Log in</button>
-          <RouterView/>
         </form>
       </div>
 

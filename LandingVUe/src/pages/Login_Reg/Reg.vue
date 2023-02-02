@@ -1,8 +1,11 @@
+<script setup>
+
+</script>
 <template>
   <div class="reg_container">
     <div class="reg_content">
 
-      <div class="reg_form">
+      <div class="reg_form" data-aos="fade-right" data-aos-duration="2000">
         <div class="reg_form_header">
           <div class="reg_form_header_label">
             <span>Sign Up</span>
@@ -52,11 +55,11 @@
         </form>
       </div>
 
-      <div class="reg_photo">
+      <div class="reg_photo" data-aos="fade-down" data-aos-duration="2000">
 
         <div class="reg_photo_container">
 
-          <img src="src/img/Reg_Log_Photo.png" alt="">
+          <img src="../../img/Reg_Log_Photo.png" alt="">
 
           <div class="reg_photo_text">
             <span class="reg_photo_text_heading">Sign Up to Netbook</span>
@@ -72,7 +75,7 @@
 
 <script>
 export default {
-  name: "Reg"
+  name: "Reg",
 }
 </script>
 

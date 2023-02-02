@@ -9,6 +9,7 @@ import Application from "../components/Application.vue";
 import News from "../components/News.vue";
 import Footer from "../components/Footer.vue";
 import Footer_Second from "../components/Footer_Second.vue";
+
 </script>
 <template>
   <Header/>

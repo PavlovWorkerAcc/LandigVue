@@ -1,17 +1,66 @@
-import { createApp } from 'vue'
+import { createApp  } from 'vue'
 import App from './App.vue'
 import './assets/main.scss'
 import './img/logo.png'
 import './components/Header.vue'
 import router from "./router";
-const app = createApp(App)
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+const app = createApp(App)
+
 app.use(router)
 app.mount('#app');
 AOS.init()
-window.onload = () => {
 
+window.onload = () => {
+    new TypeIt("#error_label_type", {
+        afterComplete: function (instance) {
+            instance.destroy();
+        }
+    })
+        .exec(async () => {
+            //-- Return a promise that resolves after something happens.
+            await new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    return resolve();
+                }, 3000);
+            });
+        })
+        .type("PAGE NOT FOUND")
+        .go();
+
+    new TypeIt("#error_text_type" , {
+        speed:15,
+        afterComplete: function (instance) {
+            instance.destroy();
+        }
+    })
+        .exec(async () => {
+            //-- Return a promise that resolves after something happens.
+            await new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    return resolve();
+                }, 5000);
+            });
+        })
+        .type('The page you are looking for doesn`t exist or an other error occurred. ')
+        .go();
+    new TypeIt('#error_link_type' , {
+        speed:15,
+        afterComplete: function (instance) {
+            instance.destroy();
+        }
+    })
+        .exec(async () => {
+            //-- Return a promise that resolves after something happens.
+            await new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    return resolve();
+                }, 8000);
+            });
+        })
+        .type('Go Back to Home Page')
+        .go();
 
     function hamburger(){
         let hamburger = document.querySelector(".hamburger");
