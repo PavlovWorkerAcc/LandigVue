@@ -12,55 +12,65 @@ app.use(router)
 app.mount('#app');
 AOS.init()
 
-window.onload = () => {
-    new TypeIt("#error_label_type", {
-        afterComplete: function (instance) {
-            instance.destroy();
-        }
-    })
-        .exec(async () => {
-            //-- Return a promise that resolves after something happens.
-            await new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    return resolve();
-                }, 3000);
-            });
-        })
-        .type("PAGE NOT FOUND")
-        .go();
 
-    new TypeIt("#error_text_type" , {
-        speed:15,
-        afterComplete: function (instance) {
-            instance.destroy();
-        }
-    })
-        .exec(async () => {
-            //-- Return a promise that resolves after something happens.
-            await new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    return resolve();
-                }, 5000);
-            });
+
+window.onload = () => {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+
+    async function typeIt() {
+        new TypeIt("#error_label_type", {
+            afterComplete: function (instance) {
+                instance.destroy();
+            }
         })
-        .type('The page you are looking for doesn`t exist or an other error occurred. ')
-        .go();
-    new TypeIt('#error_link_type' , {
-        speed:15,
-        afterComplete: function (instance) {
-            instance.destroy();
-        }
-    })
-        .exec(async () => {
-            //-- Return a promise that resolves after something happens.
-            await new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    return resolve();
-                }, 8000);
-            });
+            .exec(async () => {
+                //-- Return a promise that resolves after something happens.
+                await new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        return resolve();
+                    }, 3000);
+                });
+            })
+            .type("PAGE NOT FOUND")
+            .go();
+
+        new TypeIt("#error_text_type" , {
+            speed:15,
+            afterComplete: function (instance) {
+                instance.destroy();
+            }
         })
-        .type('Go Back to Home Page')
-        .go();
+            .exec(async () => {
+                //-- Return a promise that resolves after something happens.
+                await new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        return resolve();
+                    }, 5000);
+                });
+            })
+            .type('The page you are looking for doesn`t exist or an other error occurred. ')
+            .go();
+        new TypeIt('#error_link_type' , {
+            speed:15,
+            afterComplete: function (instance) {
+                instance.destroy();
+            }
+        })
+            .exec(async () => {
+                //-- Return a promise that resolves after something happens.
+                await new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        return resolve();
+                    }, 8000);
+                });
+            })
+            .type('Go Back to Home Page')
+            .go();
+    }
+    typeIt()
+
 
     function hamburger(){
         let hamburger = document.querySelector(".hamburger");
@@ -81,5 +91,4 @@ window.onload = () => {
         }
     }
     checkWidth()
-
 }

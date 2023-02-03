@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <div class="reg_container">
+  <div class="reg_container" style="overflow-x: hidden">
     <div class="reg_content">
 
       <div class="reg_form" data-aos="fade-right" data-aos-duration="2000">
@@ -59,7 +59,7 @@
 
         <div class="reg_photo_container">
 
-          <img src="../../img/Reg_Log_Photo.png" alt="">
+          <img src="../../img/Reg_Logo_Photo.svg" alt="">
 
           <div class="reg_photo_text">
             <span class="reg_photo_text_heading">Sign Up to Netbook</span>
@@ -84,6 +84,8 @@ export default {
     font-family: 'Poppins' ,  sans-serif;
     font-style: normal;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     .reg_content{
       margin-top: 30px;
@@ -91,8 +93,6 @@ export default {
       align-items: center;
 
       .reg_form{
-          width: 400px;
-          margin-right: 127px;
           margin-top: 40px;
         .reg_form_header{
           margin-bottom: 52px ;
@@ -179,7 +179,6 @@ export default {
             background-color: #217BF4;
             box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.25);
             border-radius: 32px;
-            width: 100%;
             border: none;
             height: 53px;
             transition: 0.6s;
@@ -269,5 +268,33 @@ export default {
         }
       }
     }
+  }
+  @media screen and (min-width: 1311px){
+    .reg_form{
+      margin-right: 127px;
+    }
+  }
+
+
+  @media screen and (max-width: 1312px) {
+    .reg_photo{
+      display: none;
+    }
+    .reg_form{
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 460px) {
+    .Reg_btn{
+      width: 100%;
+    }
+    .reg_form{
+      width: 400px;
+    }
+  }
+  @media screen and (max-width: 461px) {
+   .Reg_btn{
+     width: 65%;
+   }
   }
 </style>

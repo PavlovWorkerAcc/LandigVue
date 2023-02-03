@@ -1,5 +1,5 @@
 <template>
- <div class="container_community">
+ <div class="container_community" >
    
    <div class="content_community">
      
@@ -19,9 +19,15 @@
 
        <div class="description_community_btns">
 
-         <button class="description_community_btn">About More</button>
+         <button class="description_community_btn" @click="slideScroll">About More</button>
 
-         <button class="description_community_btn">Invite Friend</button>
+         <button class="description_community_btn" @click="copyLink" >Invite Friend</button>
+
+         <div class="link_msg_window">
+           <span class="link_msg_text">
+             Coppied!
+           </span>
+         </div>
        </div>
      </div>
      
@@ -35,7 +41,24 @@
 <script>
 
 export default {
-  name: "CommunityCH"
+  name: "CommunityCH",
+
+  methods:{
+    copyLink(){
+      let link = window.location.href
+      clipboard.writeText(link)
+
+      let msg_window = document.querySelector('.link_msg_window')
+      msg_window.style.visibility = 'visible'
+      setTimeout(function visible() {
+        msg_window.style.visibility = 'hidden'
+      } , 2000)
+    },
+    slideScroll(){
+      let about = document.querySelector('.about_container')
+      about.scrollIntoView({behavior: 'smooth' ,  block:"center"})
+    }
+  }
 }
 </script>
 
@@ -130,7 +153,29 @@ export default {
           transition: 0.6s;
           border: 1px solid #217BF4;
         }
-
+      }
+      .link_msg_window{
+        visibility: hidden;
+        width: 140px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        margin-top: 15px;
+        left: 190px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: -30%;
+          left: 50%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: #555 transparent transparent transparent;
+          transform: rotate(180deg);
+        }
       }
     }
   }

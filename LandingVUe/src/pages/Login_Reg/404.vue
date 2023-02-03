@@ -1,5 +1,5 @@
 <template>
-  <div class="error_container">
+  <div class="error_container"  >
     <div class="error_content">
       <div class="error_heading" data-aos="fade-down" data-aos-duration="3000">
         <span>
@@ -40,6 +40,8 @@ export default {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
 
   .error_content {
@@ -50,7 +52,6 @@ export default {
     .error_heading{
 
       span{
-        font-size: 250px;
         font-weight: 800;
       }
     }
@@ -61,7 +62,6 @@ export default {
       }
     }
     .error_text{
-      width: 550px;
       span{
         font-size: 16px;
       }
@@ -69,6 +69,41 @@ export default {
         color: #217BF4;
         font-style: italic ;
       }
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .error_heading {
+
+    span {
+      font-size: 250px;
+    }
+  }
+  .error_text{
+
+    width: 550px;
+  }
+}
+@media screen and (max-width: 601px) {
+  .error_heading {
+
+    span {
+      font-size: 180px;
+    }
+  }
+  .error_text{
+    display: flex;
+    flex-flow: column;
+  }
+}
+@media screen and (min-width: 400px) {
+
+}
+@media screen and (max-width: 401px) {
+  .error_heading {
+
+    span {
+      font-size: 125px;
     }
   }
 }

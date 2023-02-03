@@ -1,5 +1,5 @@
 <template>
-  <div class="Feature_container">
+  <div class="Feature_container"  style="overflow-x: hidden">
     <div class="Feature_content">
       <div class="Feature_heading">
         <div class="Feature_heading_label" data-aos="zoom-in" data-aos-duration="3000" data-aos-offset="450" data-aos-once="true">
@@ -18,7 +18,7 @@
 
         <div class="Feature_cards_left">
 
-          <div class="Feature_cards_card" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="450" data-aos-once="true">
+          <div class="Feature_cards_card" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="250" data-aos-once="true">
 
             <div class="Feature_cards_card_logo">
               <img src="../img/featureicons/Icon.png" alt="">
@@ -31,8 +31,9 @@
 
           </div>
 
-          <div class="Feature_cards_card" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="470" data-aos-once="true">
+          <div class="Feature_cards_card" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="270" data-aos-once="true">
             <div class="Feature_cards_card_logo">
+
               <img src="../img/featureicons/Icon-1.png" alt="">
             </div>
 
@@ -42,7 +43,7 @@
             </div>
           </div>
 
-          <div class="Feature_cards_card" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="500" data-aos-once="true">
+          <div class="Feature_cards_card" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="300" data-aos-once="true">
             <div class="Feature_cards_card_logo">
               <img src="../img/featureicons/Icon-2.png" alt="">
             </div>
@@ -57,7 +58,7 @@
 
         <div class="Feature_cards_right">
 
-            <div class="Feature_cards_card" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="450" data-aos-once="true">
+            <div class="Feature_cards_card" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="250" data-aos-once="true">
               <div class="Feature_cards_card_logo">
                 <img src="../img/featureicons/Icon-3.png" alt="">
               </div>
@@ -68,7 +69,7 @@
               </div>
             </div>
 
-            <div class="Feature_cards_card" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="470" data-aos-once="true">
+            <div class="Feature_cards_card" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="270" data-aos-once="true">
               <div class="Feature_cards_card_logo">
                 <img src="../img/featureicons/Icon-4.png" alt="">
               </div>
@@ -79,7 +80,7 @@
               </div>
             </div>
 
-            <div class="Feature_cards_card" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="500" data-aos-once="true">
+            <div class="Feature_cards_card" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300" data-aos-once="true">
               <div class="Feature_cards_card_logo">
                 <img src="../img/featureicons/Icon-5.png" alt="">
               </div>

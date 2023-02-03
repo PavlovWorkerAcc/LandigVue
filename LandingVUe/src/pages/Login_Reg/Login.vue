@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <div class="log_container">
+  <div class="log_container" style="overflow-x: hidden">
     <div class="log_content">
 
       <div class="log_form" data-aos="fade-right" data-aos-duration="2500">
@@ -48,7 +48,7 @@
 
         <div class="log_photo_container">
 
-          <img src="../../img/Reg_Log_Photo.png" alt="">
+          <img src="../../img/Reg_Logo_Photo.svg" alt="" data-aos="fade-in" data-aos-duration="3000">
 
           <div class="log_photo_text">
             <span class="log_photo_text_heading">Sign Up to Netbook</span>
@@ -76,6 +76,8 @@ export default {
   font-family: 'Poppins' ,  sans-serif;
   font-style: normal;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   .log_content{
     margin-top: 30px;
@@ -83,8 +85,7 @@ export default {
     align-items: center;
 
     .log_form{
-      width: 400px;
-      margin-right: 127px;
+
       .log_form_header{
         margin-bottom: 52px ;
 
@@ -161,7 +162,6 @@ export default {
           background-color: #217BF4;
           box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.25);
           border-radius: 32px;
-          width: 100%;
           border: none;
           height: 53px;
           transition: 0.6s;
@@ -250,6 +250,34 @@ export default {
         }
       }
     }
+  }
+}
+@media screen and (min-width: 1311px){
+  .log_form{
+    margin-right: 127px;
+  }
+}
+
+
+@media screen and (max-width: 1312px) {
+  .log_photo{
+    display: none;
+  }
+  .log_form{
+    text-align: center;
+  }
+}
+@media screen and (min-width: 460px) {
+  .log_btn{
+    width: 100%;
+  }
+  .log_form{
+    width: 400px;
+  }
+}
+@media screen and (max-width: 461px) {
+  .log_btn{
+    width: 65%;
   }
 }
 </style>

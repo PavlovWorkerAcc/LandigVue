@@ -1,5 +1,5 @@
 <template>
-  <div class="news_container">
+  <div class="news_container"  style="overflow-x: hidden">
     <div class="news_content">
 
       <div class="news_heading">

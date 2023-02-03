@@ -5,7 +5,7 @@
 
         <div class="footer_nav_items">
 
-          <div class="footer_nav_item_fANDs" data-aos="fade-right" data-aos-duration="2500" data-aos-offset="400" data-aos-once="true">
+          <div class="footer_nav_item_fANDs">
             <div class="footer_nav_item_home item">
 
               <span class="nav_item_label">Home</span>
@@ -32,7 +32,7 @@
 
             </div>
           </div>
-          <div class="footer_nav_item_tANDf" data-aos="fade-right" data-aos-duration="3000" data-aos-offset="400" data-aos-once="true">
+          <div class="footer_nav_item_tANDf">
             <div class="footer_nav_item_Community item">
 
               <span class="nav_item_label">Community</span>
@@ -64,15 +64,15 @@
 
         <div class="footer_newsLetter">
 
-          <div class="footer_newsLetter_label" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="150" data-aos-once="true">
+          <div class="footer_newsLetter_label">
             <span>Subscribe Cirkle Newsletter</span>
           </div>
 
-          <div class="footer_newsLetter_banner" data-aos="fade-" data-aos-duration="3000" data-aos-offset="200" data-aos-once="true">
+          <div class="footer_newsLetter_banner">
             <span>Subscribe to be the first one to know about updates. Enter your email</span>
           </div>
 
-          <form action="" class="footer_newsLetter_form" data-aos="fade-left" data-aos-duration="3000"  data-aos-once="true">
+          <form action="" class="footer_newsLetter_form">
             <input placeholder="Email Address">
             <button>Subscribe</button>
           </form>

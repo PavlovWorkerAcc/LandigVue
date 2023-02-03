@@ -1,5 +1,5 @@
 <template>
-  <div class="members_container">
+  <div class="members_container"  style="overflow-x: hidden">
     <div class="members_content">
       
       <div class="members_heading">

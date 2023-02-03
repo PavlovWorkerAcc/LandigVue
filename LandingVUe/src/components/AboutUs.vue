@@ -1,5 +1,5 @@
 <template>
-  <div class="about_container">
+  <div class="about_container"  style="overflow-x: hidden">
     <div class="about_content">
 
       <div class="about_description" >
