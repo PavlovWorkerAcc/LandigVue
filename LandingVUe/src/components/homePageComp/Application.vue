@@ -16,15 +16,15 @@
 
         <div class="appl_description_btns">
 
-          <a href="https://www.apple.com/ua/app-store/"><img src="../img/download_btn/image288.png" alt="" data-aos="fade-right" data-aos-duration="3000" data-aos-offset="230" data-aos-once="true"></a>
-          <a href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1"><img src="../img/download_btn/image289.png" alt="" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="230" data-aos-once="true"></a>
+          <a href="https://www.apple.com/ua/app-store/"><img src="../../img/download_btn/image288.png" alt="" data-aos="fade-right" data-aos-duration="3000" data-aos-offset="230" data-aos-once="true"></a>
+          <a href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1"><img src="../../img/download_btn/image289.png" alt="" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="230" data-aos-once="true"></a>
 
         </div>
         
       </div>
       
       <div class="appl_photo" data-aos="fade-right" data-aos-duration="3000" data-aos-offset = '200' data-aos-once="true" data-aos-anchor-placement="top-center">
-        <img src="../img/MaskGroup.png" alt="">
+        <img src="../../img/MaskGroup.png" alt="">
       </div>
     </div>
   </div>

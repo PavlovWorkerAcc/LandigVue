@@ -9,7 +9,7 @@ import {RouterLink , RouterView} from 'vue-router'
 
     <nav class="nav_header">
         <ul class="ul_header_elem">
-          <li class="li_header_elem"><a href="">Home</a></li>
+          <li class="li_header_elem"><a href="" @click="$router.push('/')">Home</a></li>
           <li class="li_header_elem"><a href="">Community</a></li>
           <li class="li_header_elem"><a href="">Blog</a></li>
           <li class="li_header_elem"><a href="">Events</a></li>
@@ -26,7 +26,7 @@ import {RouterLink , RouterView} from 'vue-router'
       <div id="header_media_ch">
         <nav class="nav_header_media">
           <ul class="ul_header_elem_media">
-            <li class="li_header_elem_media"><a href="">Home</a></li>
+            <li class="li_header_elem_media" ><a @click="$router.push('/')">Home</a></li>
             <li class="li_header_elem_media"><a href="">Community</a></li>
             <li class="li_header_elem_media"><a href="">Blog</a></li>
             <li class="li_header_elem_media"><a href="">Events</a></li>
@@ -54,7 +54,7 @@ import {RouterLink , RouterView} from 'vue-router'
 </template>
 
 <script>
-import App from '../../src/App.vue'
+import App from '../../App.vue'
 export default {
   name: "Header",
 

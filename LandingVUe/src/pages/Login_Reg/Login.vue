@@ -48,7 +48,7 @@
 
         <div class="log_photo_container">
 
-          <img src="../../img/Reg_Logo_Photo.svg" alt="" data-aos="fade-in" data-aos-duration="3000">
+          <img src="../../img/Reg_Logo_Photo.svg" alt="" data-aos="fade-down" data-aos-duration="3000">
 
           <div class="log_photo_text">
             <span class="log_photo_text_heading">Sign Up to Netbook</span>
@@ -69,6 +69,7 @@ export default {
   name: "Login",
 
 }
+
 </script>
 
 <style scoped lang="scss">

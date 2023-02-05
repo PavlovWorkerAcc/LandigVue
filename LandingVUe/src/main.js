@@ -2,12 +2,11 @@ import { createApp  } from 'vue'
 import App from './App.vue'
 import './assets/main.scss'
 import './img/logo.png'
-import './components/Header.vue'
+import './components/homePageComp/Header.vue'
 import router from "./router";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const app = createApp(App)
-
 app.use(router)
 app.mount('#app');
 AOS.init()

@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../../src/pages/Home.vue'
 import Reg from '../../src/pages/Login_Reg/Reg.vue'
 import Login from "../../src/pages/Login_Reg/Login.vue";
-import NotFound from "../../src/pages/Login_Reg/404.vue";
+import NotFound from "../pages/404.vue";
+import Awards from "../pages/Awards.vue";
 const router = createRouter({
 
   history:createWebHistory(),
@@ -21,6 +22,11 @@ const router = createRouter({
       path:'/Login',
       name:"Login",
       component:Login
+    },
+    {
+      path:'/Awards',
+      name:"Awards",
+      component:Awards
     },
     {
       path: "/:pathMatch(.*)*",

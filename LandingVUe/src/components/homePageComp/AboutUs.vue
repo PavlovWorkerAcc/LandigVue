@@ -30,16 +30,16 @@
         <div class="about_video" data-aos="flip-left" data-aos-duration="800" data-aos-once="true">
 
           <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
-            <source style="border-radius: 15px" src="../assets/PromoVideo.mp4" type="video/mp4" />
-            <source style="border-radius: 15px" src="../assets/PromoVideo.mp4" type="video/webm" />
+            <source style="border-radius: 15px" src="../../assets/PromoVideo.mp4" type="video/mp4" />
+            <source style="border-radius: 15px" src="../../assets/PromoVideo.mp4" type="video/webm" />
           </video>
 
         </div>
 
         <div class="about_photo" >
-          <img src="../img/AboutFirstImg.png" alt="" data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">
+          <img src="../../img/AboutFirstImg.png" alt="" data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">
 
-          <img src="../img/AboutSecondImg.png" alt="" data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">
+          <img src="../../img/AboutSecondImg.png" alt="" data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">
         </div>
 
       </div>
@@ -56,7 +56,7 @@ export default {
 
 <style scoped lang="scss">
 $aos-distance: 500px; // It has to be above import
-@import 'node_modules/aos/src/sass/animations.scss';
+@import '../../../node_modules/aos/src/sass/animations';
 
 
   .about_container{
@@ -110,7 +110,7 @@ $aos-distance: 500px; // It has to be above import
             li {
               list-style-position: outside;
               padding-left:10px;
-              list-style-image: url("src/components/icons/Group 1000001767.png");
+              list-style-image: url("../icons/Group 1000001767.png");
 
               font-family: 'Inter' , sans-serif;
               font-style: normal;

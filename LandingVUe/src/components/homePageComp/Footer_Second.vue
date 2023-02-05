@@ -6,14 +6,14 @@
             </div>
 
             <div class="social_logo">
-              <img src="../img/logo(1).png" alt="">
+              <img src="../../img/logo(1).png" alt="">
             </div>
 
             <div class="social_socials">
-              <a href="https://twitter.com/home"><img src="../img/socials/Twitter.png" alt=""></a>
-              <a href="https://www.instagram.com/"><img src="../img/socials/instagram.png" alt=""></a>
-              <a href="https://www.facebook.com/"><img src="../img/socials/facebook.png" alt=""></a>
-              <a href="https://ua.linkedin.com/"><img src="../img/socials/Linkedin.png" alt=""></a>
+              <a href="https://twitter.com/home"><img src="../../img/socials/Twitter.png" alt=""></a>
+              <a href="https://www.instagram.com/"><img src="../../img/socials/instagram.png" alt=""></a>
+              <a href="https://www.facebook.com/"><img src="../../img/socials/facebook.png" alt=""></a>
+              <a href="https://ua.linkedin.com/"><img src="../../img/socials/Linkedin.png" alt=""></a>
             </div>
           </div>
         </div>

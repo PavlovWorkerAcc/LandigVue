@@ -1,15 +1,14 @@
 <script setup>
-import Header from "../components/Header.vue";
-import CommunityCH from "../components/CommunityCH.vue";
-import AboutUs from "../components/AboutUs.vue";
-import Achivments from "../components/Achivments.vue";
-import MainFuture from "../components/MainFuture.vue";
-import Members from "../components/Members.vue";
-import Application from "../components/Application.vue";
-import News from "../components/News.vue";
-import Footer from "../components/Footer.vue";
-import Footer_Second from "../components/Footer_Second.vue";
-
+import Header from "../components/homePageComp/Header.vue";
+import CommunityCH from "../components/homePageComp/CommunityCH.vue";
+import AboutUs from "../components/homePageComp/AboutUs.vue";
+import Achivments from "../components/homePageComp/Achivments.vue";
+import MainFuture from "../components/homePageComp/MainFuture.vue";
+import Members from "../components/homePageComp/Members.vue";
+import Application from "../components/homePageComp/Application.vue";
+import News from "../components/homePageComp/News.vue";
+import Footer from "../components/homePageComp/Footer.vue";
+import Footer_Second from "../components/homePageComp/Footer_Second.vue";
 </script>
 <template>
   <Header/>
@@ -23,3 +22,4 @@ import Footer_Second from "../components/Footer_Second.vue";
   <Footer/>
   <Footer_Second/>
 </template>
+

@@ -55,11 +55,11 @@
         </form>
       </div>
 
-      <div class="reg_photo" data-aos="fade-down" data-aos-duration="2000">
+      <div class="reg_photo" >
 
         <div class="reg_photo_container">
 
-          <img src="../../img/Reg_Logo_Photo.svg" alt="">
+          <img src="../../img/Reg_Logo_Photo.svg" alt="" data-aos="fade-down" data-aos-duration="2000">
 
           <div class="reg_photo_text">
             <span class="reg_photo_text_heading">Sign Up to Netbook</span>

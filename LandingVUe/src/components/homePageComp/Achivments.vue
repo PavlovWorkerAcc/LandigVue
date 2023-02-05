@@ -7,7 +7,7 @@
           <div class="ach_block_Rating_Label" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="150" data-aos-once="true">
 
             <div class="ach_block_Rating_Label_logo">
-              <img src="../img/Star.png" alt="">
+              <img src="../../img/Star.png" alt="">
             </div>
 
             <div class="ach_block_Rating_Label_Text">
@@ -18,7 +18,7 @@
 
           <div class="ach_block_Rating_Memembers" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="170" data-aos-once="true">
 
-            <img src="../img/people.png" alt="">
+            <img src="../../img/people.png" alt="">
 
 
             <div class="ach_block_Rating_Memembers_Text">
@@ -33,7 +33,7 @@
           </div>
 
           <div class="ach_block_Rating_Link" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="230" data-aos-once="true">
-            <span><a href="#">Join Our Community ➜</a></span>
+            <span><a href="#" @click="$router.push('/Reg')">Join Our Community ➜</a></span>
           </div>
         </div>
         <!--        Awards-->
@@ -41,7 +41,7 @@
           <div class="ach_block_Awards_Label" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="150" data-aos-once="true">
 
             <div class="ach_block_Awards_Label_logo">
-              <img src="../img/Trophy.png" alt="">
+              <img src="../../img/Trophy.png" alt="">
             </div>
 
             <div class="ach_block_AwardsLabel_Text">
@@ -52,7 +52,7 @@
 
           <div class="ach_block_Awards_Award" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="170" data-aos-once="true">
             <div class="ach_block_Awards_Award_Logo">
-              <img src="../img/Ellipse14.png" alt="">
+              <img src="../../img/Ellipse14.png" alt="">
             </div>
 
             <div class="ach_block_Awards_Award_Text">
@@ -67,7 +67,7 @@
           </div>
 
           <div class="ach_block_Awards_Link" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="230" data-aos-once="true">
-            <span><a href="#">Go To Awards ➜</a></span>
+            <span><a href="#"  @click="$router.push('/Awards')">Go To Awards ➜</a></span>
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
           <div class="ach_block_Description_btns" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="230" data-aos-once="true">
 
             <button class="ach_block_Description_btn"><span>Discover me</span><span>➜</span></button>
-            <img src="../components/icons/ArrowRight.png" alt="">
+            <img src="../icons/ArrowRight.png" alt="">
 
           </div>
         </div>
