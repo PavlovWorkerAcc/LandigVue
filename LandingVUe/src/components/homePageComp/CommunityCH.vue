@@ -32,7 +32,7 @@
      </div>
      
      <div class="image_community" data-aos="fade-left" data-aos-duration="2500">
-       <img src="../../img/Iamge.png">
+       <img src="../../img/Iamge.png" loading="lazy">
      </div>
    </div>
  </div>

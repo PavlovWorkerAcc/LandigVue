@@ -12,7 +12,6 @@ app.mount('#app');
 AOS.init()
 
 
-
 window.onload = () => {
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);

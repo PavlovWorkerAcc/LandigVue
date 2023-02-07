@@ -6,7 +6,7 @@
             </div>
 
             <div class="social_logo">
-              <img src="../../img/logo(1).png" alt="">
+              <img src="../../img/logo(1).png" loading="lazy" alt="">
             </div>
 
             <div class="social_socials">

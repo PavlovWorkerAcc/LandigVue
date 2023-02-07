@@ -23,3 +23,10 @@ import Footer_Second from "../components/homePageComp/Footer_Second.vue";
   <Footer_Second/>
 </template>
 
+<script>
+document.addEventListener('unload' , ready)
+function ready(){
+  let controller = new AbortController()
+  controller.abort();
+}
+</script>

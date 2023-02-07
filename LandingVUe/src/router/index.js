@@ -4,6 +4,7 @@ import Reg from '../../src/pages/Login_Reg/Reg.vue'
 import Login from "../../src/pages/Login_Reg/Login.vue";
 import NotFound from "../pages/404.vue";
 import Awards from "../pages/Awards.vue";
+import Events from "../pages/Event.vue";
 const router = createRouter({
 
   history:createWebHistory(),
@@ -24,7 +25,12 @@ const router = createRouter({
       component:Login
     },
     {
-      path:'/Awards',
+      path: "/Events",
+      name:"Events",
+      component:Events
+    },
+    {
+      path:'/Awar',
       name:"Awards",
       component:Awards
     },
@@ -32,7 +38,7 @@ const router = createRouter({
       path: "/:pathMatch(.*)*",
       name:'NotFound',
       component:NotFound,
-    }
+    },
   ]
 })
 

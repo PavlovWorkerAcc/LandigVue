@@ -21,7 +21,7 @@
           <div class="Feature_cards_card" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="250" data-aos-once="true">
 
             <div class="Feature_cards_card_logo">
-              <img src="../../img/featureicons/Icon.png" alt="">
+              <img src="../../img/featureicons/Icon.png" loading="lazy" alt="">
             </div>
 
             <div class="Feature_cards_card_info">
@@ -34,7 +34,7 @@
           <div class="Feature_cards_card" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="270" data-aos-once="true">
             <div class="Feature_cards_card_logo">
 
-              <img src="../../img/featureicons/Icon-1.png" alt="">
+              <img src="../../img/featureicons/Icon-1.png" loading="lazy" alt="">
             </div>
 
             <div class="Feature_cards_card_info">
@@ -45,7 +45,7 @@
 
           <div class="Feature_cards_card" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="300" data-aos-once="true">
             <div class="Feature_cards_card_logo">
-              <img src="../../img/featureicons/Icon-2.png" alt="">
+              <img src="../../img/featureicons/Icon-2.png" loading="lazy" alt="">
             </div>
 
             <div class="Feature_cards_card_info">
@@ -60,7 +60,7 @@
 
             <div class="Feature_cards_card" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="250" data-aos-once="true">
               <div class="Feature_cards_card_logo">
-                <img src="../../img/featureicons/Icon-3.png" alt="">
+                <img src="../../img/featureicons/Icon-3.png" loading="lazy" alt="">
               </div>
 
               <div class="Feature_cards_card_info">
@@ -71,7 +71,7 @@
 
             <div class="Feature_cards_card" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="270" data-aos-once="true">
               <div class="Feature_cards_card_logo">
-                <img src="../../img/featureicons/Icon-4.png" alt="">
+                <img src="../../img/featureicons/Icon-4.png" loading="lazy" alt="">
               </div>
 
               <div class="Feature_cards_card_info">
@@ -82,7 +82,7 @@
 
             <div class="Feature_cards_card" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300" data-aos-once="true">
               <div class="Feature_cards_card_logo">
-                <img src="../../img/featureicons/Icon-5.png" alt="">
+                <img src="../../img/featureicons/Icon-5.png" loading="lazy" alt="">
               </div>
 
               <div class="Feature_cards_card_info">

@@ -4,7 +4,7 @@ import {RouterLink , RouterView} from 'vue-router'
 <template>
   <header>
     <div class="logo_header">
-      <img src="/src/img/logo.png" alt="">
+      <img src="/src/img/logo.png" loading="lazy" alt="">
     </div>
 
     <nav class="nav_header">
@@ -12,7 +12,7 @@ import {RouterLink , RouterView} from 'vue-router'
           <li class="li_header_elem"><a href="" @click="$router.push('/')">Home</a></li>
           <li class="li_header_elem"><a href="">Community</a></li>
           <li class="li_header_elem"><a href="">Blog</a></li>
-          <li class="li_header_elem"><a href="">Events</a></li>
+          <li class="li_header_elem"><router-link to="/Events">Events</router-link></li>
         </ul>
     </nav>
     

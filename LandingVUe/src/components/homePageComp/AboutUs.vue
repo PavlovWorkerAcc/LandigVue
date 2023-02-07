@@ -29,7 +29,7 @@
 
         <div class="about_video" data-aos="flip-left" data-aos-duration="800" data-aos-once="true">
 
-          <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+          <video id="player" loading="lazy" playsinline controls data-poster="/path/to/poster.jpg">
             <source style="border-radius: 15px" src="../../assets/PromoVideo.mp4" type="video/mp4" />
             <source style="border-radius: 15px" src="../../assets/PromoVideo.mp4" type="video/webm" />
           </video>
@@ -37,9 +37,9 @@
         </div>
 
         <div class="about_photo" >
-          <img src="../../img/AboutFirstImg.png" alt="" data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">
+          <img src="../../img/AboutFirstImg.png" loading="lazy" alt="" data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">
 
-          <img src="../../img/AboutSecondImg.png" alt="" data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">
+          <img src="../../img/AboutSecondImg.png" loading="lazy" alt="" data-aos="flip-up" data-aos-duration="3000" data-aos-once="true">
         </div>
 
       </div>

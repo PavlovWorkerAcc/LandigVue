@@ -18,7 +18,7 @@
         <div class="news_item" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="500" data-aos-once="true">
 
           <div class="news_item_photo">
-            <img src="../../img/news_photo/Image.png" alt="">
+            <img src="../../img/news_photo/Image.png"  loading="lazy" alt="">
           </div>
 
           <div class="news_item_label">
@@ -35,10 +35,10 @@
 
         </div>
 
-        <div class="news_item" data-aos="flip-left" data-aos-duration="2000" data-aos-offset="510" data-aos-once="true">
+        <div class="news_item" data-aos="flip-left"  data-aos-duration="2000" data-aos-offset="510" data-aos-once="true">
 
           <div class="news_item_photo">
-            <img src="../../img/news_photo/Image-1.png" alt="">
+            <img src="../../img/news_photo/Image-1.png"  loading="lazy" alt="">
           </div>
 
           <div class="news_item_label">
@@ -58,7 +58,7 @@
         <div class="news_item" data-aos="flip-left" data-aos-duration="3000" data-aos-offset="520" data-aos-once="true">
 
           <div class="news_item_photo">
-            <img src="../../img/news_photo/Image-2.png" alt="">
+            <img src="../../img/news_photo/Image-2.png" loading="lazy" alt="">
           </div>
 
           <div class="news_item_label">

@@ -28,7 +28,7 @@
           <div class="members_card">
 
             <div class="members_logo">
-              <img src="../../img/members_img/Group1000001767.png" alt="">
+              <img src="../../img/members_img/Group1000001767.png" loading="lazy" alt="">
             </div>
 
             <div class="members_label">
@@ -43,7 +43,7 @@
           <div class="members_card">
 
             <div class="members_logo">
-              <img src="../../img/members_img/Group1000001769.png" alt="">
+              <img src="../../img/members_img/Group1000001769.png" loading="lazy" alt="">
             </div>
 
             <div class="members_label">
@@ -59,7 +59,7 @@
           <div class="members_card">
 
             <div class="members_logo">
-              <img src="../../img/members_img/Group1000001770.png" alt="">
+              <img src="../../img/members_img/Group1000001770.png" loading="lazy" alt="">
             </div>
 
             <div class="members_label">
@@ -73,7 +73,7 @@
 
           <div class="members_card">
             <div class="members_logo">
-              <img src="../../img/members_img/Group1000001771.png" alt="">
+              <img src="../../img/members_img/Group1000001771.png" loading="lazy" alt="">
             </div>
 
             <div class="members_label">
