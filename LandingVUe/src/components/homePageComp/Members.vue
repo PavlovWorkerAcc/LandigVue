@@ -208,6 +208,7 @@ export default {
         background: #FFFFFF;
         box-shadow: 0px 34px 68px rgba(116, 115, 128, 0.1);
         border-radius: 14px;
+        margin-bottom: 30px;
 
         .members_label {
           margin: 29px 0 14px 0;

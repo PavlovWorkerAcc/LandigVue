@@ -39,11 +39,12 @@ export default {
     align-items: center;
     margin: 0 auto;
     background-color: rgba(22, 99, 199, 0.85);
-    height: 100vh;
-    
+    padding: 50px 0;
     .award_content{
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
       .award_heading{
         margin-bottom: 20px;
 

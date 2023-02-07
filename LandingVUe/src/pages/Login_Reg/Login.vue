@@ -20,18 +20,36 @@
         <form class="log_inputsANDbtns">
           <div class="log_input email">
             <span>Email</span>
-            <input type="text" placeholder="Enter your email address">
+            <input  placeholder="Enter your email address" v-model="email"
+                   type="email"
+                   @blur="isEmailTouched = true"
+                   :class="{ error: isEmailError  , correct: isEmailCorrect}">
             <hr>
+            <div v-if="isEmailError" style="color: red">
+              Email is not correct
+            </div>
+            <div v-if="isEmailCorrect" style="color: green">
+              Email is Correct
+            </div>
           </div>
 
           <div class="log_input password">
             <span>Password</span>
-            <input type="password" placeholder="Enter your Password">
+            <input type="password" placeholder="Enter your Password"
+                   v-model="password"
+                   @blur="isPasswordTouched = true"
+                   :class="{ error: isPasswordError  , correct:isPasswordCorrect}">
             <hr>
+            <div v-if="isPasswordError" style="color: red">
+              Password is not correct
+            </div>
+            <div v-if="isPasswordCorrect" style="color: green">
+              Password is  correct
+            </div>
           </div>
 
 
-          <button class="log_btn">
+          <button class="log_btn form_btn" >
             <span>Login</span>
           </button>
 
@@ -63,11 +81,47 @@
 </template>
 
 <script>
+const emailCheckRegex = /\b[a-zA-Z0-9._]+@[a-z]{2,5}\.[a-z]{2,6}\b/
 
+const passwordCheckRegex = /^[A-Za-z]\w{7,14}$/
 
 export default {
   name: "Login",
+  data() {
+    return {
+      email: null,
+      password: null,
 
+      isEmailTouched: false,
+      isPasswordTouched: false,
+    };
+  },
+  computed: {
+    //Email Validation start
+    isEmailValid() {
+      return emailCheckRegex.test(this.email);
+    },
+
+    isEmailError() {
+      return !this.isEmailValid && this.isEmailTouched;
+    },
+    isEmailCorrect() {
+      return this.isEmailValid && this.isEmailTouched
+    },
+    //Email Validation end
+
+    //Password Validation start
+    isPasswordValid() {
+      return passwordCheckRegex.test(this.password);
+    },
+    isPasswordError() {
+      return !this.isPasswordValid && this.isPasswordTouched;
+    },
+    isPasswordCorrect() {
+      return this.isPasswordValid && this.isPasswordTouched
+    },
+    //Password Validation end
+  }
 }
 
 </script>

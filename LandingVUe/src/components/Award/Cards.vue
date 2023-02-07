@@ -44,18 +44,10 @@ export default {
   data() {
     return {
       awards: [
-        {AwardName: "Best of Github", Date: "2021", Votes: "1.932.000" , Place: "1st" , logo:'https://cdn-icons-png.flaticon.com/128/25/25231.png' , Description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatem."},
-        {AwardName: "People Choice", Date: "2022", Votes: "1.200.000" , Place: "1st" , logo: 'https://cdn-icons-png.flaticon.com/128/8980/8980705.png' , Description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatem."},
-        {AwardName: "Best Vue Project", Date: "2021", Votes: "980.000" , Place: "3st" , logo: 'https://cdn-icons-png.flaticon.com/128/5315/5315314.png' , Description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatem."},
-        {AwardName: "Best Community Project", Date: "2020", Votes: "420.000" , Place: "6st" , logo:'https://cdn-icons-png.flaticon.com/128/5323/5323697.png' , Description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatem."},
-        {AwardName: "Best Community Project", Date: "2020", Votes: "420.000" , Place: "6st" , logo:'https://cdn-icons-png.flaticon.com/128/5323/5323697.png' , Description:"Lorem ipsum dolor       "},
-        {AwardName: "Best Community Project", Date: "2020", Votes: "420.000" , Place: "6st" , logo:'https://cdn-icons-png.flaticon.com/128/5323/5323697.png' , Description:"Lorem ipsum dolor       "},
-        {AwardName: "Best Community Project", Date: "2020", Votes: "420.000" , Place: "6st" , logo:'https://cdn-icons-png.flaticon.com/128/5323/5323697.png' , Description:"Lorem ipsum dolor       "},
-        {AwardName: "Best Community Project", Date: "2020", Votes: "420.000" , Place: "6st" , logo:'https://cdn-icons-png.flaticon.com/128/5323/5323697.png' , Description:"Lorem ipsum dolor       "},
-        {AwardName: "Best Community Project", Date: "2020", Votes: "420.000" , Place: "6st" , logo:'https://cdn-icons-png.flaticon.com/128/5323/5323697.png' , Description:"Lorem ipsum dolor       "},
-        {AwardName: "Best Community Project", Date: "2020", Votes: "420.000" , Place: "6st" , logo:'https://cdn-icons-png.flaticon.com/128/5323/5323697.png' , Description:"Lorem ipsum dolor       "},
-        {AwardName: "Best Community Project", Date: "2020", Votes: "420.000" , Place: "6st" , logo:'https://cdn-icons-png.flaticon.com/128/5323/5323697.png' , Description:"Lorem ipsum dolor       "},
-
+        {AwardName: "Best of Github", Date: "2021", Votes: "1.932.000" , Place: "1st" , logo:'https://cdn-icons-png.flaticon.com/128/25/25231.png'   } ,
+        {AwardName: "People Choice", Date: "2022", Votes: "1.200.000" , Place: "1st" , logo: 'https://cdn-icons-png.flaticon.com/128/8980/8980705.png'  } ,
+        {AwardName: "Best Vue Project", Date: "2021", Votes: "980.000" , Place: "3st" , logo: 'https://cdn-icons-png.flaticon.com/128/5315/5315314.png'  } ,
+        {AwardName: "Best Community Project", Date: "2020", Votes: "420.000" , Place: "6st" , logo:'https://cdn-icons-png.flaticon.com/128/5323/5323697.png'},
       ],
     }
   }
@@ -65,6 +57,7 @@ export default {
 <style scoped lang="scss">
 .Cards_Content{
   display: flex;
+  flex-wrap: wrap;
   .Award_Body_Card_Container{
     font-family: 'Source Code Pro' , monospace;
     font-style: normal;
@@ -74,7 +67,7 @@ export default {
     background-color: white;
     border-radius: 12px;
     margin: 15px 15px 15px 15px;
-
+    color: #333;
     .Award_Body_Card_Content{
       margin-top: 15px;
       display: flex;

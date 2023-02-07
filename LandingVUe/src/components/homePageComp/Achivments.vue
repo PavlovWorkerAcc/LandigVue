@@ -89,7 +89,6 @@
           <div class="ach_block_Description_btns" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="230" data-aos-once="true">
 
             <button class="ach_block_Description_btn"><span>Discover me</span><span>➜</span></button>
-            <img src="../icons/ArrowRight.png" alt="">
 
           </div>
         </div>

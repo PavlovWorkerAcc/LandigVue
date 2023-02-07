@@ -20,29 +20,66 @@
         <form class="reg_inputsANDbtns">
           <div class="reg_input email">
             <span>Email</span>
-            <input type="text" placeholder="Enter your email address">
+            <input  placeholder="Enter your email address"
+                    v-model="email"
+                    type="email"
+                    @blur="isEmailTouched = true"
+                    :class="{ error: isEmailError  , correct: isEmailCorrect}">
             <hr>
+            <div v-if="isEmailError" style="color: red">
+              Email is not correct
+            </div>
+            <div v-if="isEmailCorrect" style="color: green">
+              Email is Correct
+            </div>
           </div>
 
           <div class="reg_input username">
             <span>Username</span>
-            <input type="text" placeholder="Enter your User name">
+            <input type="text" placeholder="Enter your User name"
+                   v-model="name"
+                   @blur="isNameTouched = true"
+                   :class="{ error: isNameError , correct: isNameCorrect }">
             <hr>
+            <div v-if="isNameError" style="color: red">
+              Username is not correct
+            </div>
+            <div v-if="isNameCorrect" style="color: green">
+              Username is correct
+            </div>
           </div>
 
           <div class="reg_input password">
             <span>Password</span>
-            <input type="password" placeholder="Enter your Password">
+            <input type="password" placeholder="Enter your Password"
+                   v-model="password"
+                   @blur="isPasswordTouched = true"
+                   :class="{ error: isPasswordError  , correct:isPasswordCorrect}">
             <hr>
+            <div v-if="isPasswordError" style="color: red">
+              Password is not correct
+            </div>
+            <div v-if="isPasswordCorrect" style="color: green">
+              Password is  correct
+            </div>
           </div>
 
-          <div class="reg_input password">
+          <div class="reg_input password ">
             <span>Confirm Password</span>
-            <input type="password" placeholder="Confrim your Password">
+            <input type="password" placeholder="Confrim your Password"
+                   v-model="passwordCon"
+                   @blur="isPasswordConTouched = true"
+                   :class="{ error: isPasswordConError , correct:isPasswordConCorrect}">
             <hr>
+            <div v-if="isPasswordConError" style="color: red">
+              Password Mismatch
+            </div>
+            <div v-if="isPasswordConCorrect" style="color: green">
+              Password Match
+            </div>
           </div>
 
-          <button class="Reg_btn">
+          <button class="Reg_btn" :disabled="!isEmailValid">
             <span>Register</span>
           </button>
 
@@ -74,8 +111,76 @@
 </template>
 
 <script>
+const emailCheckRegex = /\b[a-zA-Z0-9._]+@[a-z]{2,5}\.[a-z]{2,6}\b/
+const nameCheckRegex = /^[A-Za-z][A-Za-z0-9_]{2,29}$/
+const passwordCheckRegex = /^[A-Za-z]\w{7,14}$/
+
 export default {
   name: "Reg",
+  data() {
+    return {
+      email: null,
+      name:null,
+      password:null,
+      passwordCon: null,
+
+      isPasswordConTouched: false,
+      isEmailTouched: false,
+      isNameTouched: false,
+      isPasswordTouched: false,
+
+    };
+  },
+
+  computed: {
+    //Email Validation start
+    isEmailValid() {
+      return emailCheckRegex.test(this.email);
+    },
+
+    isEmailError() {
+      return !this.isEmailValid && this.isEmailTouched;
+    },
+    isEmailCorrect(){
+      return this.isEmailValid && this.isEmailTouched
+    },
+    //Email Validation end
+
+    //Name Validation start
+    isNameValid(){
+      return nameCheckRegex.test(this.name);
+    },
+
+    isNameError(){
+      return !this.isNameValid && this.isNameTouched;
+    },
+
+    isNameCorrect(){
+      return this.isNameValid && this.isNameTouched
+    },
+    //Name Validation end
+
+    //Password Validation start
+    isPasswordValid(){
+      return passwordCheckRegex.test(this.password);
+    },
+    isPasswordError(){
+      return !this.isPasswordValid && this.isPasswordTouched;
+    },
+    isPasswordCorrect(){
+      return this.isPasswordValid && this.isPasswordTouched
+    },
+    //Password Validation end
+
+    //Confirm Password Validation start
+    isPasswordConError(){
+      return this.passwordCon !== this.password
+    },
+    isPasswordConCorrect(){
+      return this.passwordCon === this.password
+    }
+  },
+
 }
 </script>
 
