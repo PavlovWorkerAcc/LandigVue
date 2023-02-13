@@ -4,7 +4,7 @@ import {RouterLink , RouterView} from 'vue-router'
 <template>
   <header>
     <div class="logo_header">
-      <img src="/src/img/logo.png" loading="lazy" alt="">
+      <img src="../../img/logo.png" loading="lazy" alt="">
     </div>
 
     <nav class="nav_header">
@@ -17,7 +17,7 @@ import {RouterLink , RouterView} from 'vue-router'
     </nav>
     
     <form class="form_header">
-      <div class="glass_logo_form_header"><img src="/src/img/MagnifyingGlass.png" style="width: 15px"></div>
+      <div class="glass_logo_form_header"><img src="../../img/MagnifyingGlass.png" style="width: 15px"></div>
       <input class="form_header_input" type="search" placeholder="Search Here...">
       <button class="btn_header" @click="$router.push('/Login')" >Log in</button>
     </form>

@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .events_cards_container {
   margin: 100px auto;
   display: flex;

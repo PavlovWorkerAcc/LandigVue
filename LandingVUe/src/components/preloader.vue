@@ -21,8 +21,8 @@ export default {
   },
   mounted() {
     document.onreadystatechange = () => {
-      if(document.readyState == 'complete'){
-        this.isloaded = true
+      if(document.readyState === 'complete'){
+        return this.isloaded = true
       }
     }
   }

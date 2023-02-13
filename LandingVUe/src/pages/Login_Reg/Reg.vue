@@ -19,7 +19,10 @@
 
         <form class="reg_inputsANDbtns">
           <div class="reg_input email">
-            <span>Email</span>
+            <div class="email_label">
+              <img src="../../img/Log_Reg_Icons/messageIcon.png" alt="">
+              <span>Email</span>
+            </div>
             <input  placeholder="Enter your email address"
                     v-model="email"
                     type="email"
@@ -35,7 +38,10 @@
           </div>
 
           <div class="reg_input username">
-            <span>Username</span>
+            <div class="user_label">
+              <img src="../../img/Log_Reg_Icons/userIcon.png" alt="">
+              <span>Username</span>
+            </div>
             <input type="text" placeholder="Enter your User name"
                    v-model="name"
                    @blur="isNameTouched = true"
@@ -50,7 +56,10 @@
           </div>
 
           <div class="reg_input password">
-            <span>Password</span>
+            <div class="password_label">
+              <img src="../../img/Log_Reg_Icons/padlockIcon.png" alt="">
+              <span>Password</span>
+            </div>
             <input type="password" placeholder="Enter your Password"
                    v-model="password"
                    @blur="isPasswordTouched = true"
@@ -65,7 +74,10 @@
           </div>
 
           <div class="reg_input password ">
-            <span>Confirm Password</span>
+            <div class="password_label">
+              <img src="../../img/Log_Reg_Icons/padlockIcon.png" alt="">
+              <span>Password</span>
+            </div>
             <input type="password" placeholder="Confrim your Password"
                    v-model="passwordCon"
                    @blur="isPasswordConTouched = true"
@@ -96,7 +108,7 @@
 
         <div class="reg_photo_container">
 
-          <img src="../../img/Reg_Logo_Photo.svg" loading="lazy" alt="" data-aos="fade-down" data-aos-duration="2000">
+          <img src="../../img/Reg_Log_Photo.png" loading="lazy" alt="" data-aos="fade-down" data-aos-duration="2000">
 
           <div class="reg_photo_text">
             <span class="reg_photo_text_heading">Sign Up to Netbook</span>
@@ -229,6 +241,15 @@ export default {
             margin-bottom: 42px;
             display: flex;
             flex-flow: column;
+
+            .email_label , .user_label , .password_label{
+              display: flex;
+              align-items: center;
+              margin-left: 0;
+              img{
+                margin-bottom: 5px;
+              }
+            }
             span , input , hr{
               margin: 0 0 5px 0;
             }
@@ -257,29 +278,12 @@ export default {
             span{
               display: flex;
               &:before{
-                content: url("src/components/icons/Log_Reg_Icons/messageIcon.png");
+                content: url("../../img/Log_Reg_Icons/messageIcon.png");
                 margin: 0 5px 0 0;
               }
             }
           }
-          .username{
-            span{
-              display: flex;
-              &:before{
-                content: url("src/components/icons/Log_Reg_Icons/userIcon.png");
-                margin: 0 5px 0 0;
-              }
-            }
-          }
-          .password{
-            span{
-              display: flex;
-              &:before{
-                content: url("src/components/icons/Log_Reg_Icons/padlockIcon.png");
-                margin: 0 5px 0 0;
-              }
-            }
-          }
+
           .Reg_btn{
             background-color: #217BF4;
             box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.25);

@@ -62,6 +62,7 @@ export default {
           EventLogo:"https://i.ibb.co/Ny4wJXq/Business.png",
           EventBackGround: "background: #D2EBF7;"
         } ,
+
       ],
     }
   }
@@ -69,6 +70,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
   .event_card{
     display: flex;
     width: 1000px;

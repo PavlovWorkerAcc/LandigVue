@@ -110,7 +110,7 @@ $aos-distance: 500px; // It has to be above import
             li {
               list-style-position: outside;
               padding-left:10px;
-              list-style-image: url("../icons/Group 1000001767.png");
+              list-style-image: url("../../img/icons/Group 1000001767.png");
 
               font-family: 'Inter' , sans-serif;
               font-style: normal;

@@ -6,6 +6,7 @@ import './components/homePageComp/Header.vue'
 import router from "./router";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import TypeIt from "typeit";
 const app = createApp(App)
 app.use(router)
 app.mount('#app');

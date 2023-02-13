@@ -55,6 +55,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .Cards_Content{
   display: flex;
   flex-wrap: wrap;
