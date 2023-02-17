@@ -35,7 +35,7 @@ const router = createRouter({
       component:Awards
     },
     {
-      path: "/LandigVue/:pathMatch(.*)*",
+      path: "/:pathMatch(.*)*",
       name:'NotFound',
       component:NotFound,
     },
