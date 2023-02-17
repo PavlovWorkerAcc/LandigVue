@@ -4,6 +4,7 @@ import PreloaderItem from "@/components/preloader.vue";
 </script>
 
 <template>
+  <div>sdsdsdsdsdsd</div>
   <PreloaderItem/>
   <router-view/>
 </template>
