@@ -9,7 +9,7 @@
         </span>
         <span class="events_heading_text">We will be glad to see you</span>
       </div>
-      <Event_Card/>
+      <Event_Carditem v-for="item in events" :key="item" :item="item" @getItemValue="takeItemValue"></Event_Carditem>
     </div>
   </div>
 
@@ -22,11 +22,43 @@
 import HeaderItem from "../components/homePageComp/Header.vue";
 import FooterItem from "../components/homePageComp/Footer.vue";
 import Footer_Second from "../components/homePageComp/Footer_Second.vue";
-import Event_Card from "../components/Events/Event_Card.vue";
+import Event_Carditem from "../components/Events/Event_Card.vue";
 
 export default {
   name: "Events-item",
-  components: {Footer_Second, FooterItem, HeaderItem , Event_Card}
+  components: {Footer_Second, FooterItem, HeaderItem , Event_Carditem},
+  data(){
+    return{
+      events: [
+        {EventTeg: "Productivity" ,
+          EventLabel:"7 Skills of Highly Effective Programmers" ,
+          EventDate : "22.02.2023",
+          EventText:"Our team was inspired by the seven skills of highly effective programmers created by the TechLead. We wanted to provide our own take on the topic. Here are our seven skills of effective programmers..." ,
+          EventLogo:"https://i.ibb.co/2WtQJph/Laptop.png",
+          EventBackGround: "background: #BCD1FF;",
+        } ,
+        {EventTeg: "Media" ,
+          EventLabel:"SMM starter pack, part 2: content promotion" ,
+          EventDate : "10.02.2023",
+          EventText:"This is the second part of the SMM starter pack series of articles. If you made it this far, you must be willing to learn about promoting business through social media. " ,
+          EventLogo:"https://i.ibb.co/HNmjqJw/Social-Media.png",
+          EventBackGround: "background: linear-gradient(135deg, #F395BA 0%, #FED182 100%);"
+        } ,
+        {EventTeg: "BUSINESS" ,
+          EventLabel:"11 Things I Wish I Knew When I Started My Business" ,
+          EventDate : "18.05.2023",
+          EventText:"Here are 11 things I wish I knew when I started my business. I hope they will save you some time and some anguish because (experience is a good teacher here) the sodium from your tears acts as a corrosive melting agent..." ,
+          EventLogo:"https://i.ibb.co/Ny4wJXq/Business.png",
+          EventBackGround: "background: #D2EBF7;"
+        } ,
+      ],
+    }
+  },
+  methods:{
+    takeItemValue(data){
+                alert(data)
+           } 
+        }
 }
 </script>
 

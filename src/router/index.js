@@ -10,7 +10,7 @@ const router = createRouter({
   history:createWebHistory(),
   routes: [
     {
-      path:'',
+      path:'/LandigVue/',
       name:'Home',
       component:Home ,
     },
@@ -35,7 +35,7 @@ const router = createRouter({
       component:Awards
     },
     {
-      path: "/:pathMatch(.*)*",
+      path: "/LandigVue/:pathMatch(.*)*",
       name:'NotFound',
       component:NotFound,
     },

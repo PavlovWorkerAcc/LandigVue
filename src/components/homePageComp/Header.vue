@@ -9,7 +9,7 @@ import {RouterLink} from 'vue-router'
 
     <nav class="nav_header">
         <ul class="ul_header_elem">
-          <li class="li_header_elem"><a href="" @click="$router.push('/')">Home</a></li>
+          <li class="li_header_elem"><a href="" @click="$router.push('/LandigVue/')">Home</a></li>
           <li class="li_header_elem"><a href="">Community</a></li>
           <li class="li_header_elem"><a href="">Blog</a></li>
           <li class="li_header_elem"><router-link to="/Events">Events</router-link></li>
@@ -26,7 +26,7 @@ import {RouterLink} from 'vue-router'
       <div id="header_media_ch">
         <nav class="nav_header_media">
           <ul class="ul_header_elem_media">
-            <li class="li_header_elem_media" ><a @click="$router.push('/')">Home</a></li>
+            <li class="li_header_elem_media" ><a @click="$router.push('/LandigVue/')">Home</a></li>
             <li class="li_header_elem_media"><a href="">Community</a></li>
             <li class="li_header_elem_media"><a href="">Blog</a></li>
             <li class="li_header_elem_media"><a href="">Events</a></li>
