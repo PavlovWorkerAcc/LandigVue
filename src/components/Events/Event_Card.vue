@@ -1,5 +1,9 @@
 <template>
+<<<<<<< Updated upstream
   <div class="event_card">
+=======
+  <div class="event_card" v-for="item in events" v-bind:key="item" data-aos="fade-up" data-aos-duration="3000">
+>>>>>>> Stashed changes
     <div class="event_card_photo" :style="item.EventBackGround">
       <img :src="item.EventLogo">
     </div>

@@ -4,10 +4,10 @@
   <div class="events_cards_container">
     <div class="events_cards_content">
       <div class="events_heading">
-        <span class="events_heading_label">
+        <span class="events_heading_label" data-aos="fade-left" data-aos-duration="2500">
           Our upcoming events
         </span>
-        <span class="events_heading_text">We will be glad to see you</span>
+        <span class="events_heading_text" data-aos="fade-left" data-aos-duration="3000">We will be glad to see you</span>
       </div>
       <Event_Carditem v-for="item in events" :key="item" :item="item" @getItemValue="takeItemValue"></Event_Carditem>
     </div>
