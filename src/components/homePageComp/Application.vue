@@ -113,8 +113,11 @@ export default {
     }
 
     .appl_photo{
-      position: relative;
-      top: 5px;
+
+      img{
+        position: relative;
+        top: 5px;
+      }
     }
   }
 }

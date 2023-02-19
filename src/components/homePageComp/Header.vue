@@ -9,16 +9,15 @@ import {RouterLink} from 'vue-router'
 
     <nav class="nav_header">
         <ul class="ul_header_elem">
-          <li class="li_header_elem"><a href="" @click="$router.push('/LandigVue/')">Home</a></li>
-          <li class="li_header_elem"><a href="">Community</a></li>
-          <li class="li_header_elem"><a href="">Blog</a></li>
+          <li class="li_header_elem"><a href="" @click="$router.push('/')">Home</a></li>
+          <li class="li_header_elem"><a @click="slideScrollCommunity" style="cursor: pointer" >Community</a></li>
+          <li class="li_header_elem"><a @click="slideScrollNews" style="cursor: pointer" >News</a></li>
           <li class="li_header_elem"><router-link to="/Events">Events</router-link></li>
         </ul>
     </nav>
     
     <form class="form_header">
-      <div class="glass_logo_form_header"><img src="../../img/MagnifyingGlass.png" style="width: 15px"></div>
-      <input class="form_header_input" type="search" placeholder="Search Here...">
+      <button class="btn_header" @click="$router.push('/Reg')" >Sign Up</button>
       <button class="btn_header" @click="$router.push('/Login')" >Log in</button>
     </form>
 
@@ -26,15 +25,15 @@ import {RouterLink} from 'vue-router'
       <div id="header_media_ch">
         <nav class="nav_header_media">
           <ul class="ul_header_elem_media">
-            <li class="li_header_elem_media" ><a @click="$router.push('/LandigVue/')">Home</a></li>
-            <li class="li_header_elem_media"><a href="">Community</a></li>
-            <li class="li_header_elem_media"><a href="">Blog</a></li>
+            <li class="li_header_elem_media" ><a @click="$router.push('/')">Home</a></li>
+            <li class="li_header_elem"><a @click="slideScrollCommunity" style="cursor: pointer" >Community</a></li>
+            <li class="li_header_elem"><a @click="slideScrollNews" style="cursor: pointer" >News</a></li>
             <li class="li_header_elem_media"><a href="">Events</a></li>
           </ul>
         </nav>
 
         <form class="form_header_media">
-          <input class="form_header_input_media" type="search" placeholder="Search Here...">
+          <button class="btn_header_media" @click="$router.push('/Reg')">Sign Up</button>
           <button class="btn_header_media" @click="$router.push('/Login')">Log in</button>
         </form>
       </div>
@@ -54,7 +53,7 @@ import {RouterLink} from 'vue-router'
 </template>
 
 <script>
-import App from '../../App.vue'
+
 export default {
   name: "Header-item",
 
@@ -71,9 +70,13 @@ export default {
         div.style.display = 'none'
       }
     },
-    closeHomePage(){
-      let home = document.querySelector(App)
-      home.style.display = 'none'
+    slideScrollCommunity(){
+      let about = document.querySelector('.about_container')
+      about.scrollIntoView({behavior: 'smooth' ,  block:"center"})
+    },
+    slideScrollNews(){
+      let about = document.querySelector('.about_container')
+      about.scrollIntoView({behavior: 'smooth' ,  block:"nearest"})
     }
   }
 }
@@ -146,20 +149,6 @@ header {
   align-items: center;
   margin-left: 379px;
   padding-left: 379px;
-  .form_header_input {
-    margin-left: 7px;
-    margin-right: 42px;
-    border: none;
-    width: 80px;
-    height: 25px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    background-color: rgba(0, 0, 0, 0);
-    outline: none;
-  }
 
   .btn_header {
     width: 123px;
@@ -184,6 +173,9 @@ header {
       color:rgba(33, 123, 244, 1);
       transition: 0.6s;
       border: 1px solid #217BF4;
+    }
+    &:not(:first-child){
+      margin-left: 15px;
     }
   }
 }
@@ -243,20 +235,6 @@ header {
     }
     .form_header_media {
      text-align: center;
-      .form_header_input_media {
-        margin-left: 7px;
-        margin-right: 42px;
-        border: none;
-        width: 80px;
-        height: 25px;
-        font-family: 'Inter', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        background-color: rgba(0, 0, 0, 0);
-        outline: none;
-      }
 
       .btn_header_media {
         width: 123px;
@@ -281,6 +259,9 @@ header {
           color:rgba(33, 123, 244, 1);
           transition: 0.6s;
           border: 1px solid #217BF4;
+        }
+        &:not(:first-child){
+          margin-left: 15px;
         }
       }
     }

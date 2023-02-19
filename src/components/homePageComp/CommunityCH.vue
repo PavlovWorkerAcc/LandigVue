@@ -39,7 +39,7 @@
 </template>
 
 <script>
-
+import * as clipboard from "clipboard-polyfill";
 export default {
   /* eslint-disable */
   name: "CommunityCH",
@@ -48,7 +48,6 @@ export default {
     copyLink(){
       let link = window.location.href
       clipboard.writeText(link)
-
       let msg_window = document.querySelector('.link_msg_window')
       msg_window.style.visibility = 'visible'
       setTimeout(function visible() {

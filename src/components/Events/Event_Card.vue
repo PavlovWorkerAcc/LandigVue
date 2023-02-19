@@ -1,42 +1,33 @@
 <template>
-<<<<<<< Updated upstream
   <div class="event_card">
-=======
-  <div class="event_card" v-for="item in events" v-bind:key="item" data-aos="fade-up" data-aos-duration="3000">
->>>>>>> Stashed changes
-    <div class="event_card_photo" :style="item.EventBackGround">
-      <img :src="item.EventLogo">
-    </div>
-    <div class="event_card_content">
-      <div class="event_card_Teg">
-        <span>
-          {{item.EventTeg}}
-        </span>
+      <div class="event_card_photo" :style="item.EventBackGround">
+        <img :src="item.EventLogo">
       </div>
-      <div class="event_card_label">
-        <span>
-          {{item.EventLabel}}
-        </span>
-      </div>
-      <div class="event_card_text">
-        <span>
-          {{item.EventText}}
-        </span>
-      </div>
-      <div class="card_footer">
-        <div class="event_card_date">
-         <span>
-           {{item.EventDate}}
-         </span>
-        </div>
-        <div class="event_card_link">
+      <div class="event_card_content">
+        <div class="event_card_Teg">
           <span>
-          <a href="#" @click="viewDetailsClicked">Read Mode ➜</a>
-        </span>
+            {{item.EventTeg}}
+          </span>
         </div>
+        <div class="event_card_label">
+          <span>
+            {{item.EventLabel}}
+          </span>
+        </div>
+        <div class="event_card_text">
+          <span>
+            {{item.EventText}}
+          </span>
+        </div>
+        <div class="card_footer">
+          <div class="event_card_date">
+           <span>
+             {{item.EventDate}}
+           </span>
+          </div>
       </div>
     </div>
-  </div>
+   </div>
 </template>
 
 <script>
@@ -58,11 +49,7 @@ export default {
       events:Eventitem
     }
   },
-  methods: {
-    viewDetailsClicked(){
-      this.$emit("getItemValue",this.item.EventTeg);
-    }
-  }
+
 }
 
 </script>

@@ -60,7 +60,7 @@
           </button>
 
           <div class="link_to_home">
-            <RouterLink to="/LandigVue/" class="homelink"><span class="btn_header">Return to Home Page</span></RouterLink>
+            <RouterLink to="/" class="homelink"><span class="btn_header">Return to Home Page</span></RouterLink>
             <RouterView/>
           </div>
 
