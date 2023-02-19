@@ -14,7 +14,7 @@
 
       <div class="error_text">
         <span id="error_text_type"></span>
-        <RouterLink to="/" class="home_link" @click="changeHrefVis" data-aos="fade-in" data-aos-duration="3000"><span id="error_link_type"></span></RouterLink>
+        <RouterLink to="/LandigVue/" class="home_link" @click="changeHrefVis" data-aos="fade-in" data-aos-duration="3000"><span id="error_link_type"></span></RouterLink>
       </div>
     </div>
   </div>
