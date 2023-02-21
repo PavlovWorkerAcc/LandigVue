@@ -13,7 +13,7 @@
               <ul>
                 <li><a href="#" @click="$router.push('/LandigVue/')">Home</a></li>
                 <li><a @click="slideScrollCommunity" style="cursor: pointer">Community</a></li>
-                <li><router-link to="/Events">Events</router-link></li>
+                <li><router-link to="/LandigVue/Events">Events</router-link></li>
                 <li><a @click="slideScrollNews" style="cursor: pointer" >News</a></li>
               </ul>
 

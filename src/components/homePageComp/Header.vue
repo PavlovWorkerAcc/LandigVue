@@ -12,13 +12,13 @@ import {RouterLink} from 'vue-router'
           <li class="li_header_elem"><a href="" @click="$router.push('/LandigVue/')">Home</a></li>
           <li class="li_header_elem"><a @click="slideScrollCommunity" style="cursor: pointer" >Community</a></li>
           <li class="li_header_elem"><a @click="slideScrollNews" style="cursor: pointer" >News</a></li>
-          <li class="li_header_elem"><router-link to="/Events">Events</router-link></li>
+          <li class="li_header_elem"><router-link to="/LandigVue/Events">Events</router-link></li>
         </ul>
     </nav>
     
     <form class="form_header">
-      <button class="btn_header" @click="$router.push('/Reg')" >Sign Up</button>
-      <button class="btn_header" @click="$router.push('/Login')" >Log in</button>
+      <button class="btn_header" @click="$router.push('/LandigVue/Reg')" >Sign Up</button>
+      <button class="btn_header" @click="$router.push('/LandigVue/Login')" >Log in</button>
     </form>
 
     <div class="media_container">
@@ -33,8 +33,8 @@ import {RouterLink} from 'vue-router'
         </nav>
 
         <form class="form_header_media">
-          <button class="btn_header_media" @click="$router.push('/Reg')">Sign Up</button>
-          <button class="btn_header_media" @click="$router.push('/Login')">Log in</button>
+          <button class="btn_header_media" @click="$router.push('/LandigVue/Reg')">Sign Up</button>
+          <button class="btn_header_media" @click="$router.push('/LandigVue/Login')">Log in</button>
         </form>
       </div>
 

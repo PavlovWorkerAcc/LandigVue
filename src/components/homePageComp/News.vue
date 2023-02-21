@@ -1,3 +1,4 @@
+
 <template>
   <div class="news_container"  style="overflow-x: hidden">
     <div class="news_content">
@@ -15,73 +16,65 @@
 
       <div class="news_items">
 
-        <div class="news_item" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="500" data-aos-once="true">
+        <div class="news_item" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="500" data-aos-once="true" v-for="item in PageContent" :key="item">
 
           <div class="news_item_photo">
-            <img src="../../img/news_photo/Image.png"  loading="lazy" alt="">
+            <img :src="item.logo"  loading="lazy" alt="">
           </div>
 
           <div class="news_item_label">
             <div class="news_item_label_container">
               <span class="line"></span>
-              <span class="text">It Does Not Matter Hows Slowly go as Long</span>
+              <span class="text">{{ item.PageLabel }}</span>
             </div>
 
           </div>
 
           <div class="news_item_link">
-            <span><a href="#">Continue Reading ➜</a></span>
+            <span><router-link :to="`/Page/${item.PageLabel}`" :key="item" :item="item" @click="viewDetailsClicked">Continue Reading ➜</router-link></span>
           </div>
 
         </div>
 
-        <div class="news_item" data-aos="flip-left"  data-aos-duration="2000" data-aos-offset="510" data-aos-once="true">
-
-          <div class="news_item_photo">
-            <img src="../../img/news_photo/Image-1.png"  loading="lazy" alt="">
-          </div>
-
-          <div class="news_item_label">
-            <div class="news_item_label_container">
-              <span class="line"></span>
-              <span class="text">Netbook Network Added New Photo Filter</span>
-            </div>
-          </div>
-
-
-          <div class="news_item_link">
-            <span><a href="#">Continue Reading ➜</a></span>
-          </div>
-
-        </div>
-
-        <div class="news_item" data-aos="flip-left" data-aos-duration="3000" data-aos-offset="520" data-aos-once="true">
-
-          <div class="news_item_photo">
-            <img src="../../img/news_photo/Image-2.png" loading="lazy" alt="">
-          </div>
-
-          <div class="news_item_label">
-            <div class="news_item_label_container">
-              <span class="line"></span>
-              <span class="text">We Optimised Netbooks Better Navigation</span>
-            </div>
-          </div>
-
-          <div class="news_item_link">
-              <span><a href="#">Continue Reading ➜</a></span>
-          </div>
-
-        </div>
-
-      </div>
+      </div><x></x>
     </div>
   </div>
 </template>
 
 <script>
+import page from "@/components/NewsPage/Page.vue";
 export default {
-  name: "News-item"
+  name: "News-item",
+  props: {
+    item: {
+      type: Object,
+      required: true
+    }
+  },
+  data() {
+    return {
+      page: page,
+      PageContent: [
+        {
+          PageLabel: "We Optimised Netbooks Better Navigation",
+          logo: "https://i.ibb.co/RjMpYNY/Image.png"
+        },
+        {
+          PageLabel: "Netbook Network Added New Photo Filter",
+          logo: 'https://i.ibb.co/NVGYtCW/Image-1.png'
+        },
+        {
+          PageLabel: "It Does Not Matter Hows Slowly go as Long",
+          logo: 'https://i.ibb.co/M7ZytNs/Image-2.png'
+        },
+      ],
+    }
+  },
+  methods: {
+    viewDetailsClicked(){
+      this.$emit("viewDetails",this.item.id);
+    }
+  }
 }
 </script>
 

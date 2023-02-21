@@ -5,6 +5,7 @@ import Login from "../../src/pages/Login_Reg/Login.vue";
 import NotFound from "../pages/404.vue";
 import Awards from "../pages/Awards.vue";
 import Events from "../pages/Event.vue";
+import Page from "@/components/NewsPage/Page.vue";
 const router = createRouter({
 
   history:createWebHistory(),
@@ -15,27 +16,31 @@ const router = createRouter({
       component:Home ,
     },
     {
-      path: '/Reg',
+      path: '/LandigVue/Reg',
       name: 'Register',
       component: Reg
     },
     {
-      path:'/Login',
+      path:'/LandigVue/Login',
       name:"Login",
       component:Login
     },
     {
-      path: "/Events",
+      path: "/LandigVue/Events",
       name:"Events",
       component:Events
     },
     {
-      path:'/Awar',
+      path:'/LandigVue/Awar',
       name:"Awards",
       component:Awards
     },
     {
-      path: "/:pathMatch(.*)*",
+      path: "/Page/:id",
+      component: Page,
+    },
+    {
+      path: "/LandigVue/:pathMatch(.*)*",
       name:'NotFound',
       component:NotFound,
     },

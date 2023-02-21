@@ -13,7 +13,7 @@
 
           <div class="reg_form_header_text">
             <span>If you already have an account register</span>
-            <span>You can  <RouterLink to="/Login">Login here !</RouterLink></span>
+            <span>You can  <RouterLink to="/LandigVue/Login">Login here !</RouterLink></span>
           </div>
         </div>
 

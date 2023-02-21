@@ -33,7 +33,7 @@
           </div>
 
           <div class="ach_block_Rating_Link" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="230" data-aos-once="true">
-            <span><a href="#" @click="$router.push('/Reg')" >Join Our Community ➜</a></span>
+            <span><a href="#" @click="$router.push('/LandigVue/Reg')" >Join Our Community ➜</a></span>
           </div>
         </div>
         <!--        Awards-->
@@ -67,7 +67,7 @@
           </div>
 
           <div class="ach_block_Awards_Link" data-aos="fade-in" data-aos-duration="3000" data-aos-offset="230" data-aos-once="true">
-            <span><a href="#"  @click="$router.push('/Awar')">Go To Awards ➜</a></span>
+            <span><a href="#"  @click="$router.push('/LandigVue/Awar')">Go To Awards ➜</a></span>
           </div>
         </div>
       </div>
@@ -88,7 +88,7 @@
 
           <div class="ach_block_Description_btns" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="230" data-aos-once="true">
 
-            <button class="ach_block_Description_btn" @click="$router.push('/Reg')"><span>Discover me</span><span>➜</span></button>
+            <button class="ach_block_Description_btn" @click="$router.push('/LandigVue/Reg')"><span>Discover me</span><span>➜</span></button>
 
           </div>
         </div>
