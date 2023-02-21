@@ -5,7 +5,7 @@
   <div class="log_container" style="overflow-x: hidden">
     <div class="log_content">
 
-      <div class="log_form" data-aos="fade-right" data-aos-duration="2500">
+      <div class="log_form" data-aos="fade-down" data-aos-duration="2500">
         <div class="log_form_header">
           <div class="log_form_header_label">
             <span>Sign In</span>
@@ -68,13 +68,13 @@
         </form>
       </div>
 
-      <div class="log_photo" data-aos="fade-down" data-aos-duration="2500">
+      <div class="log_photo">
 
-        <div class="log_photo_container" data-aos="fade-down" data-aos-duration="3000">
+        <div class="log_photo_container" >
 
-          <img src="../../img/Reg_Log_Photo.png" loading="lazy" alt="">
+          <img src="../../img/Reg_Log_Photo.png" loading="lazy" alt="" data-aos="fade-left" data-aos-duration="3000">
 
-          <div class="log_photo_text">
+          <div class="log_photo_text"  data-aos="fade-right" data-aos-duration="3000">
             <span class="log_photo_text_heading">Sign Up to Netbook</span>
             <span class="log_photo_text_label">Lorem Ipsum is simply</span>
           </div>

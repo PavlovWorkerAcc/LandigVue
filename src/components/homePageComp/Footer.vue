@@ -11,10 +11,10 @@
               <span class="nav_item_label">Home</span>
 
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" @click="$router.push('/LandigVue/')">Home</a></li>
+                <li><a @click="slideScrollCommunity" style="cursor: pointer">Community</a></li>
+                <li><router-link to="/Events">Events</router-link></li>
+                <li><a @click="slideScrollNews" style="cursor: pointer" >News</a></li>
               </ul>
 
             </div>
@@ -84,7 +84,17 @@
 
 <script>
 export default {
-  name: "Footer-item"
+  name: "Footer-item",
+  methods:{
+    slideScrollCommunity(){
+      let about = document.querySelector('.Feature_container')
+      about.scrollIntoView({behavior: 'smooth' ,  block:"center"})
+    },
+    slideScrollNews(){
+      let about = document.querySelector('.news_container')
+      about.scrollIntoView({behavior: 'smooth' ,  block:"center"})
+    }
+  }
 }
 </script>
 

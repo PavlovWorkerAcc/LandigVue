@@ -5,7 +5,7 @@
   <div class="reg_container" style="overflow-x: hidden">
     <div class="reg_content">
 
-      <div class="reg_form" data-aos="fade-right" data-aos-duration="2000">
+      <div class="reg_form" data-aos="fade-down" data-aos-duration="2500">
         <div class="reg_form_header">
           <div class="reg_form_header_label">
             <span>Sign Up</span>
@@ -108,9 +108,9 @@
 
         <div class="reg_photo_container">
 
-          <img src="../../img/Reg_Log_Photo.png" loading="lazy" alt="" data-aos="fade-down" data-aos-duration="2000">
+          <img src="../../img/Reg_Log_Photo.png" loading="lazy" alt="" data-aos="fade-left" data-aos-duration="3000">
 
-          <div class="reg_photo_text">
+          <div class="reg_photo_text" data-aos="fade-right" data-aos-duration="3000">
             <span class="reg_photo_text_heading">Sign Up to Netbook</span>
             <span class="reg_photo_text_label">Lorem Ipsum is simply</span>
           </div>
@@ -124,7 +124,7 @@
 
 <script>
 const emailCheckRegex = /\b[a-zA-Z0-9._]+@[a-z]{2,5}\.[a-z]{2,6}\b/
-const nameCheckRegex = /^[A-Za-z][A-Za-z0-9_]{2,29}$/
+const nameCheckRegex = /^[A-Za-z][A-Za-z0-9_]{4,}$/
 const passwordCheckRegex = /^[A-Za-z]\w{7,14}$/
 
 export default {

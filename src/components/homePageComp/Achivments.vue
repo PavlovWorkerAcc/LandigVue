@@ -88,7 +88,7 @@
 
           <div class="ach_block_Description_btns" data-aos="fade-left" data-aos-duration="3000" data-aos-offset="230" data-aos-once="true">
 
-            <button class="ach_block_Description_btn"><span>Discover me</span><span>➜</span></button>
+            <button class="ach_block_Description_btn" @click="$router.push('/Reg')"><span>Discover me</span><span>➜</span></button>
 
           </div>
         </div>

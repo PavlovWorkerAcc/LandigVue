@@ -71,12 +71,12 @@ export default {
       }
     },
     slideScrollCommunity(){
-      let about = document.querySelector('.about_container')
+      let about = document.querySelector('.Feature_container')
       about.scrollIntoView({behavior: 'smooth' ,  block:"center"})
     },
     slideScrollNews(){
-      let about = document.querySelector('.about_container')
-      about.scrollIntoView({behavior: 'smooth' ,  block:"nearest"})
+      let about = document.querySelector('.news_container')
+      about.scrollIntoView({behavior: 'smooth' ,  block:"center"})
     }
   }
 }

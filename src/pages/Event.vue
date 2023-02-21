@@ -9,7 +9,7 @@
         </span>
         <span class="events_heading_text" data-aos="fade-left" data-aos-duration="3000">We will be glad to see you</span>
       </div>
-      <Event_Carditem v-for="item in events" :key="item" :item="item" ></Event_Carditem>
+      <Event_Carditem v-for="item in events" :key="item" :item="item" data-aos="fade-in " data-aos-duration="3000"></Event_Carditem>
     </div>
   </div>
 
