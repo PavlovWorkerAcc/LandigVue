@@ -25,6 +25,6 @@ import Footer_Second from "../components/homePageComp/Footer_Second.vue";
 
 <script>
 export default {
-  name:'Home-page'
+  name:'Home-page',
 }
 </script>

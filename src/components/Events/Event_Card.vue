@@ -62,9 +62,7 @@ export default {
     margin-bottom: 50px;
     .event_card_photo{
       text-align: center;
-
       border-radius: 16px 0px 0px 16px;
-      padding: 80px;
 
     }
     .event_card_content{
@@ -121,7 +119,7 @@ export default {
         margin: 0;
 
         .event_card_date{
-          margin-left:0;
+
 
           span{
             font-family: 'Open Sans' , sans-serif;
@@ -159,4 +157,51 @@ export default {
       }
     }
   }
+  @media screen and (min-width: 1031px) {
+    .event_card{
+
+      .event_card_content{
+
+        .card_footer{
+
+          .event_card_date{
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1030px) {
+    .event_card{
+      flex-flow: column;
+      width: 400px;
+      .event_card_photo{
+        border-radius: 16px 16px 0px 0px;
+      }
+
+      .event_card_content{
+        border-radius: 0px 0px 16px 16px;
+        text-align: center;
+        padding-bottom: 15px;
+      }
+    }
+  }
+  @media screen and (min-width: 441px) {
+    .event_card {
+
+      .event_card_photo {
+          padding: 80px;
+      }
+    }
+  }
+    @media screen and (max-width: 440px) {
+      .event_card {
+        width: 314px;
+
+        .event_card_photo {
+          width: 314px;
+        }
+      }
+    }
+
 </style>

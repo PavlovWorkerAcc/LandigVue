@@ -53,17 +53,20 @@ export default {
 
       span{
         font-weight: 800;
+        color: black;
       }
     }
     .error_label{
 
       span{
-        font-size: 36px
+        font-size: 36px;
+        color: black;
       }
     }
     .error_text{
       span{
         font-size: 16px;
+        color: black;
       }
       a{
         color: #217BF4;

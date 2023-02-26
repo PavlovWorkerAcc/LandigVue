@@ -8,19 +8,13 @@
         </div>
 
         <div class="members_heading_banner" data-aos="zoom-out" data-aos-duration="3000" data-aos-offset="470" data-aos-once="true">
-            <span>Our Active Members</span>
+            <span>Our Team</span>
         </div>
 
         <div class="members_heading_underBanText" data-aos="zoom-out" data-aos-duration="3000" data-aos-offset="500" data-aos-once="true">
             <span>when an unknown printer took a galley of type and meeting fari scrambled it.</span>
         </div>
 
-      </div>
-      
-      <div class="members_btns" data-aos="zoom-out" data-aos-duration="3000" data-aos-offset="530" data-aos-once="true">
-        <button class="member_btn">Newst</button>
-        <button class="member_btn">Popular</button>
-        <button class="member_btn">Active</button>
       </div>
       
       <div class="members_cards">

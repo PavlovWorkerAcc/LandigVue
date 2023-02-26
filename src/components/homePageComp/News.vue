@@ -31,12 +31,11 @@
           </div>
 
           <div class="news_item_link">
-            <span><router-link :to="`/Page/${item.PageLabel}`" :key="item" :item="item" @click="viewDetailsClicked">Continue Reading ➜</router-link></span>
+            <span><router-link :to="`/Page/${item.PageLabel}`" :key="item" :item="item" >Continue Reading ➜</router-link></span>
           </div>
 
         </div>
-
-      </div><x></x>
+      </div>
     </div>
   </div>
 </template>
@@ -45,14 +44,10 @@
 import page from "@/components/NewsPage/Page.vue";
 export default {
   name: "News-item",
-  props: {
-    item: {
-      type: Object,
-      required: true
-    }
-  },
-  data() {
+
+  data: () => {
     return {
+
       page: page,
       PageContent: [
         {
@@ -70,11 +65,7 @@ export default {
       ],
     }
   },
-  methods: {
-    viewDetailsClicked(){
-      this.$emit("viewDetails",this.item.id);
-    }
-  }
+  components: page
 }
 </script>
 

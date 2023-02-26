@@ -1,3 +1,4 @@
+
 <script setup>
 import {RouterLink} from 'vue-router'
 </script>
@@ -26,9 +27,9 @@ import {RouterLink} from 'vue-router'
         <nav class="nav_header_media">
           <ul class="ul_header_elem_media">
             <li class="li_header_elem_media" ><a @click="$router.push('/LandigVue/')">Home</a></li>
-            <li class="li_header_elem"><a @click="slideScrollCommunity" style="cursor: pointer" >Community</a></li>
-            <li class="li_header_elem"><a @click="slideScrollNews" style="cursor: pointer" >News</a></li>
-            <li class="li_header_elem_media"><a href="">Events</a></li>
+            <li class="li_header_elem_media"><a @click="slideScrollCommunity" style="cursor: pointer" >Community</a></li>
+            <li class="li_header_elem_media"><a @click="slideScrollNews" style="cursor: pointer" >News</a></li>
+            <li class="li_header_elem_media"><router-link to="/LandigVue/Events">Events</router-link></li>
           </ul>
         </nav>
 
@@ -134,7 +135,7 @@ header {
       margin-top: 1px;
       height: 2px;
       width: 0%;
-      background-color: #0061ff;
+      background-color: #101010;
       transition: width .3s ease-in-out;
     }
     a:hover:after,
@@ -312,4 +313,5 @@ header {
     display: none;
   }
 }
+
 </style>

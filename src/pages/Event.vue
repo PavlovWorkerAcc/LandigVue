@@ -44,7 +44,7 @@ export default {
           EventLogo:"https://i.ibb.co/HNmjqJw/Social-Media.png",
           EventBackGround: "background: linear-gradient(135deg, #F395BA 0%, #FED182 100%);"
         } ,
-        {EventTeg: "BUSINESS" ,
+        {EventTeg: "Business" ,
           EventLabel:"11 Things I Wish I Knew When I Started My Business" ,
           EventDate : "18.05.2023",
           EventText:"Here are 11 things I wish I knew when I started my business. I hope they will save you some time and some anguish because (experience is a good teacher here) the sodium from your tears acts as a corrosive melting agent..." ,
