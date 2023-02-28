@@ -193,6 +193,7 @@ header {
     flex-flow: column;
     margin: 0 auto;
     align-items: center;
+    padding-bottom: 30px;
     .nav_header_media{
       margin-bottom: 15px;
       .ul_header_elem_media{

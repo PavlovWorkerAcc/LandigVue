@@ -17,7 +17,7 @@
           </div>
         </div>
 
-        <form class="log_inputsANDbtns">
+        <form class="log_inputsANDbtns" action="../../../check.php" METHOD="post">
           <div class="log_input email">
             <div class="email_label">
               <img src="../../img/Log_Reg_Icons/messageIcon.png" alt="">

@@ -6,6 +6,7 @@ import NotFound from "../pages/404.vue";
 import Awards from "../pages/Awards.vue";
 import Events from "../pages/Event.vue";
 import Page from "@/components/NewsPage/Page.vue";
+
 const router = createRouter({
 
   history:createWebHistory(),

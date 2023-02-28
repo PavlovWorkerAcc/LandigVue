@@ -230,10 +230,10 @@ export default {
       }
     }
   }
-@media screen and (min-width:344px ){
+@media screen and (min-width:345px ){
   .description_community_btn{
-    &:not(:last-child){
-      margin-right: 20px;
+    &:not(:first-child){
+      margin-left: 20px;
     }
   }
 }

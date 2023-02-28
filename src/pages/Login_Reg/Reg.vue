@@ -17,7 +17,7 @@
           </div>
         </div>
 
-        <form class="reg_inputsANDbtns">
+        <form class="reg_inputsANDbtns" action="/check.php" METHOD="post">
           <div class="reg_input email">
             <div class="email_label">
               <img src="../../img/Log_Reg_Icons/messageIcon.png" alt="">
@@ -26,6 +26,7 @@
             <input  placeholder="Enter your email address"
                     v-model="email"
                     type="email"
+                    name="email"
                     @blur="isEmailTouched = true"
                     :class="{ error: isEmailError  , correct: isEmailCorrect}">
             <hr>
@@ -44,6 +45,7 @@
             </div>
             <input type="text" placeholder="Enter your User name"
                    v-model="name"
+                   name="name"
                    @blur="isNameTouched = true"
                    :class="{ error: isNameError , correct: isNameCorrect }">
             <hr>
@@ -91,7 +93,7 @@
             </div>
           </div>
 
-          <button class="Reg_btn" :disabled="!isEmailValid">
+          <button type="submit" class="Reg_btn" >
             <span>Register</span>
           </button>
 

@@ -50,7 +50,7 @@ export default {
     align-items: center;
 
     .appl_description {
-      height: 340px;
+
 
       .appl_description_label {
 
@@ -105,10 +105,6 @@ export default {
         display: flex;
         align-items: center;
 
-        a{
-          position: relative;
-          left: -33px;
-        }
       }
     }
 
@@ -130,6 +126,7 @@ export default {
   .appl_description{
     margin-left: 250px;
   }
+
 }
 @media screen and (max-width: 1400px){
   .appl_content{
@@ -138,8 +135,16 @@ export default {
   .appl_description{
     text-align: center;
   }
+  .appl_description_banner{
+    width: 351px;
+    margin: 10px 36px 18px 36px;
+  }
+  .appl_description_underBanText{
+    width: 340px;
+    margin: 0 36px 36px 36px;
+  }
   .appl_description_btns{
-   margin-left: 25px;
+    margin-left: 50px;
   }
 }
 @media screen and (max-width: 950px){
@@ -150,30 +155,40 @@ export default {
       width: 95%;
     }
   }
+
 }
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 411px) {
   .appl_description_banner{
     width: 351px;
-    margin: 10px auto 18px 0;
+
   }
   .appl_description_underBanText{
     width: 340px;
-    margin: 0 auto 36px 0;
+
+  }
+  .appl_description_btns{
+    a{
+      position: relative;
+      right: 30px;
+    }
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 410px) {
   .appl_description_banner{
     width: 250px;
+    margin: 10px auto 18px 36px;
   }
   .appl_description_underBanText{
     width: 240px;
   }
   .appl_description_btns{
     flex-flow: column;
-    left: 35px;
+  }
+  .appl_description_btns{
+    margin-left: 0;
   }
   .appl_photo{
-    margin-top: 90px;
+    margin-top: 50px;
   }
 }
 </style>

@@ -9,13 +9,7 @@ import Footer_Second from "@/components/homePageComp/Footer_Second.vue";
     <div class="news_container">
       <div class="news_content">
         <div class="news_searchbar">
-          <form action="">
-            <input type="text" placeholder="Search...">
-          </form>
-          <div class="news_search_icons">
-            <img class="glass" src="../../img/loupe(1).png" alt="">
-            <img class="cross" src="../../img/close.png" alt="">
-          </div>
+         <span>News from our Partners</span>
         </div>
         <div class="news_result" >
             <div class="event_card"  v-for="(article , index) in articles" :key="index" data-aos-duration="3000" data-aos="flip-left" data-aos-easing="easy-out">
@@ -89,7 +83,7 @@ export default {
       this.articles = [];
     },
     fetchTopNews(){
-      this.apiUrl = 'https://climate-news-feed.p.rapidapi.com/page/1?limit=5'
+      this.apiUrl = 'https://climate-news-feed.p.rapidapi.com/page/1?limit=7'
       this.isBusy = true
       this.searchword = "";
 
@@ -130,32 +124,12 @@ export default {
       .news_searchbar {
         position: relative;
         width: 100%;
-        font-size: 1.5rem;
+        
 
-        input {
-          margin: 0;
-          padding: 0 100px 0 20px;
-          width: calc(100% - 50px);
-          height: 60px;
-          border: none;
-          font-size: 2rem;
-          color: #fff;
-          background-color: #222;
-          border-radius: 15px;
-
-          &:focus {
-            outline: none;
-          }
-        }
-
-        .glass, .cross {
-          left: 870px;
-          bottom: 47px;
-          cursor: pointer;
-        }
-
-        .cross {
-          margin-left: 15px;
+        span{
+          font-family: "Poppins", monospace;
+          font-size: 40px;
+          color: black;
         }
       }
     }
@@ -180,7 +154,7 @@ export default {
 
         .event_card_content {
           border-radius: 0px 16px 16px 0px;
-          padding: 0 35px;
+          padding: 35px 35px;
           background-color: #EEF6FF;
 
           margin: 0;
@@ -282,6 +256,7 @@ export default {
       @media screen and (min-width: 1031px) {
         .event_card {
 
+
           .event_card_content {
 
             .card_footer {
@@ -299,7 +274,11 @@ export default {
           width: 400px;
 
           .event_card_photo {
-            border-radius: 16px 16px 0px 0px;
+
+            img{
+              width: 400px;
+              border-radius: 16px 16px 0px 0px;
+            }
           }
 
           .event_card_content {
@@ -320,7 +299,10 @@ export default {
           width: 314px;
 
           .event_card_photo {
-            width: 314px;
+
+            img{
+              width: 314px;
+            }
           }
         }
       }
